@@ -1,0 +1,22 @@
+[
+  {
+    "id": "lidwoorden",
+    "titleKey": "grammar_title_lidwoorden", // e.g., "Lidwoorden: De en Het"
+    "explanationKey": "grammar_expl_lidwoorden", // Extensive explanation of rules
+    "examples": [ // These are in Dutch
+      { "sentence": "De man loopt op straat.", "rule_applied_key": "lidwoorden_rule_common_nouns" },
+      { "sentence": "Het meisje eet een appel.", "rule_applied_key": "lidwoorden_rule_diminutives" }
+    ],
+    "commonMistakesKey": "grammar_mistakes_lidwoorden"
+  },
+  {
+    "id": "pronouns-personal",
+    "titleKey": "grammar_title_pronouns_personal", // "Persoonlijke Voornaamwoorden"
+    "explanationKey": "grammar_expl_pronouns_personal",
+    "examples": [
+      { "sentence": "Ik ben moe.", "rule_applied_key": "pronouns_subj_first_person" },
+      { "sentence": "Hij geeft haar een boek.", "rule_applied_key": "pronouns_obj_third_person_fem" }
+    ]
+  }
+  // ... More grammar topics (verb conjugation, word order, adjectives, adverbs)
+]

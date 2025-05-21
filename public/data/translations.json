@@ -1,0 +1,50 @@
+{
+  "en": {
+    "nav_home": "Home",
+    "nav_lessons": "Lessons",
+    "nav_grammar": "Grammar",
+    "nav_exercises": "Exercises",
+    "page_title_lessons": "Dutch Lessons",
+    "page_title_grammar": "Dutch Grammar",
+    "page_title_exercises": "Practice Exercises",
+    "greeting_title": "Greetings",
+    "greeting_explanation": "Learn how to greet people in Dutch.",
+    "lidwoorden_title": "Articles (De/Het)",
+    "lidwoorden_explanation": "Understand when to use 'de' and 'het'.",
+    "show_answer": "Show Answer",
+    "next_question": "Next Question",
+    "submit_quiz": "Submit Quiz"
+
+  },
+  "nl": {
+    "nav_home": "Home", 
+    "nav_grammar": "Grammatica",
+    "nav_exercises": "Oefeningen",
+    "page_title_lessons": "Nederlandse Lessen",
+    "page_title_grammar": "Nederlandse Grammatica",
+    "page_title_exercises": "Oefeningen",
+    "greeting_title": "Begroetingen",
+    "greeting_explanation": "Leer hoe je mensen in het Nederlands begroet.",
+    "lidwoorden_title": "Lidwoorden (De/Het)",
+    "lidwoorden_explanation": "Begrijp wanneer je 'de' en 'het' gebruikt.",
+    "show_answer": "Toon Antwoord",
+    "next_question": "Volgende Vraag",
+    "submit_quiz": "Quiz Indienen"
+  },
+  "tl": {
+    "nav_home": "Home", 
+    "nav_lessons": "Mga Aralin",
+    "nav_grammar": "Balarila",
+    "nav_exercises": "Mga Pagsasanay",
+    "page_title_lessons": "Mga Aralin sa Dutch",
+    "page_title_grammar": "Balarila ng Dutch",
+    "page_title_exercises": "Mga Pagsasanay",
+    "greeting_title": "Mga Pagbati",
+    "greeting_explanation": "Alamin kung paano bumati ng mga tao sa Dutch.",
+    "lidwoorden_title": "Mga Artikulo (De/Het)",
+    "lidwoorden_explanation": "Unawain kung kailan gagamitin ang 'de' at 'het'.",
+    "show_answer": "Ipakita ang Sagot",
+    "next_question": "Susunod na Tanong",
+    "submit_quiz": "Ipasa ang Pagsusulit"
+  }
+}

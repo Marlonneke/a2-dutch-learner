@@ -1,0 +1,435 @@
+/* -------------------- */
+/* --- GLOBAL RESET & BASE STYLES --- */
+/* -------------------- */
+:root {
+  /* Colors */
+  --primary-color: #007bff; /* A nice blue */
+  --secondary-color: #6c757d; /* Muted gray */
+  --success-color: #28a745; /* Green for correct answers */
+  --danger-color: #dc3545; /* Red for incorrect or warnings */
+  --light-color: #f8f9fa; /* Light background */
+  --dark-color: #343a40; /* Dark text */
+  --text-color: #212529;
+  --background-color: #ffffff;
+  --border-color: #dee2e6;
+  --link-color: var(--primary-color);
+  --link-hover-color: #0056b3;
+
+  /* Typography */
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --base-font-size: 16px;
+  --line-height-base: 1.6;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem; /* 4px */
+  --spacing-sm: 0.5rem;  /* 8px */
+  --spacing-md: 1rem;    /* 16px */
+  --spacing-lg: 1.5rem;  /* 24px */
+  --spacing-xl: 2rem;    /* 32px */
+
+  /* Borders */
+  --border-radius: 0.3rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--base-font-size);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-sans-serif);
+  line-height: var(--line-height-base);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* -------------------- */
+/* --- LAYOUT COMPONENTS --- */
+/* (Assumes you have MainLayout, Header, Footer components) */
+/* -------------------- */
+
+#root { /* This is where React mounts */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.site-header {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: var(--spacing-md) var(--spacing-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.site-header .logo a {
+  color: var(--light-color);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.site-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.site-nav li {
+  margin-left: var(--spacing-md);
+}
+
+.site-nav a {
+  color: var(--light-color);
+  text-decoration: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.site-nav a:hover,
+.site-nav a.active { /* You might need react-router-dom's NavLink for .active */
+  background-color: var(--link-hover-color);
+}
+
+.site-main {
+  flex-grow: 1;
+  padding: var(--spacing-lg);
+  max-width: 1000px; /* Content width constraint */
+  width: 90%;
+  margin: 0 auto; /* Center content */
+}
+
+.site-footer {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  text-align: center;
+  padding: var(--spacing-md);
+  margin-top: auto; /* Pushes footer to bottom */
+}
+
+/* -------------------- */
+/* --- TYPOGRAPHY & COMMON ELEMENTS --- */
+/* -------------------- */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: var(--spacing-md);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--dark-color);
+}
+
+h1 { font-size: 2.25rem; } /* ~36px */
+h2 { font-size: 1.875rem; } /* ~30px */
+h3 { font-size: 1.5rem; } /* ~24px */
+h4 { font-size: 1.25rem; } /* ~20px */
+
+p {
+  margin-bottom: var(--spacing-md);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+ul, ol {
+  padding-left: var(--spacing-lg); /* Indent lists */
+  margin-bottom: var(--spacing-md);
+}
+
+li {
+  margin-bottom: var(--spacing-sm);
+}
+
+code {
+  font-family: var(--font-family-monospace);
+  background-color: #e9ecef;
+  padding: 0.2em 0.4em;
+  border-radius: 0.2rem;
+  font-size: 90%;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border-color);
+  margin: var(--spacing-lg) 0;
+}
+
+/* -------------------- */
+/* --- FORMS & BUTTONS --- */
+/* -------------------- */
+.button, button, input[type="submit"], input[type="button"] {
+  display: inline-block;
+  font-weight: 400;
+  color: var(--light-color);
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  line-height: var(--line-height-base);
+  border-radius: var(--border-radius);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.button:hover, button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+  background-color: var(--link-hover-color);
+  border-color: var(--link-hover-color);
+}
+
+.button.secondary, button.secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+.button.secondary:hover, button.secondary:hover {
+  background-color: #545b62;
+  border-color: #545b62;
+}
+
+
+select, input[type="text"], input[type="email"], textarea {
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  width: 100%; /* Make them block by default or specific width */
+  max-width: 300px; /* Example constraint */
+  margin-bottom: var(--spacing-md);
+}
+
+.language-toggle select { /* Specific to language toggle in header */
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  border: 1px solid #ccc;
+  padding: var(--spacing-sm) var(--spacing-xs);
+  border-radius: var(--border-radius);
+  font-size: 0.9rem;
+  width: auto; /* Let it size to content */
+}
+
+/* -------------------- */
+/* --- PAGE SPECIFIC OR MAJOR COMPONENTS --- */
+/* -------------------- */
+
+/* Lesson/Grammar Cards */
+.list-container { /* For .lesson-list, .grammar-list */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.card {
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  margin-top: 0;
+}
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+  flex-grow: 1; /* Pushes button to bottom if card content height varies */
+}
+.card .card-theme {
+  font-size: 0.85rem;
+  color: var(--secondary-color);
+  margin-bottom: var(--spacing-sm);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.card .button {
+  margin-top: var(--spacing-md);
+  align-self: flex-start; /* Aligns button to left if card is flex column */
+}
+
+/* Detail Pages (Lesson, Grammar) */
+.detail-page .lesson-explanation,
+.detail-page .grammar-explanation {
+  background-color: var(--light-color);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-lg);
+  border: 1px solid #e0e0e0;
+}
+
+.detail-page .example-sentences li,
+.detail-page .vocabulary-list li {
+  background-color: #f9f9f9;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-sm);
+  border-left: 3px solid var(--primary-color);
+}
+.detail-page .example-sentences li strong, /* Dutch part */
+.detail-page .vocabulary-list li strong {
+    color: var(--primary-color);
+}
+.detail-page .example-sentences li span { /* English hint */
+    font-style: italic;
+    color: var(--secondary-color);
+    font-size: 0.9em;
+}
+
+
+.dialogue-section {
+  margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-md);
+  border: 1px solid #e7e7e7;
+  border-radius: var(--border-radius);
+  background-color: #fafafa;
+}
+.dialogue-section h4 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+.dialogue-section p {
+  margin-bottom: var(--spacing-xs);
+}
+.dialogue-section p strong { /* Speaker name */
+  color: var(--secondary-color);
+}
+
+/* Exercises Page */
+.exercise-container {
+  background-color: var(--light-color);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: var(--spacing-lg);
+}
+
+.exercise-question {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: var(--spacing-lg);
+}
+
+.exercise-options ul {
+  list-style: none;
+  padding: 0;
+}
+.exercise-options li {
+  margin-bottom: var(--spacing-sm);
+}
+.exercise-options button, .exercise-options label { /* Options as buttons or radio labels */
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: var(--spacing-md);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  margin-bottom: var(--spacing-sm);
+}
+.exercise-options button:hover, .exercise-options label:hover {
+  background-color: #e9ecef;
+}
+.exercise-options input[type="radio"] {
+  margin-right: var(--spacing-sm);
+}
+
+.feedback {
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  margin-top: var(--spacing-lg);
+  font-weight: 500;
+}
+.feedback.correct {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+.feedback.incorrect {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+
+/* Utility classes (optional but helpful) */
+.text-center { text-align: center; }
+.text-bold { font-weight: bold; }
+.mt-1 { margin-top: var(--spacing-md); }
+.mb-1 { margin-bottom: var(--spacing-md); }
+
+/* -------------------- */
+/* --- RESPONSIVE DESIGN (Basic Example) --- */
+/* -------------------- */
+
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    padding: var(--spacing-md);
+  }
+  .site-header .logo {
+    margin-bottom: var(--spacing-sm);
+  }
+  .site-nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .site-nav li {
+    margin-left: 0;
+    margin-bottom: var(--spacing-xs);
+    width: 100%;
+  }
+  .site-nav a {
+    display: block; /* Make nav links full width */
+    text-align: center;
+  }
+  .site-main {
+    width: 95%;
+    padding: var(--spacing-md);
+  }
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.5rem; }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --base-font-size: 14px; /* Smaller base font for very small screens */
+  }
+  .list-container {
+    grid-template-columns: 1fr; /* Stack cards on small screens */
+  }
+  .button {
+    width: 100%; /* Make buttons full width often */
+  }
+}
