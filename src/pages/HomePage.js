@@ -13,19 +13,7 @@ const HomePage = () => {
         {t('ui_home_welcome_message') || 'Start your journey to mastering A2 level Dutch...'}
       </p>
 
-      <div className="home-navigation-links" style={{ marginTop: '30px', display: 'flex', gap: '20px', justifyContent: 'center' }}>
-        <Link to="/lessons" className="button">
-          {t('ui_nav_lessons')}
-        </Link>
-        <Link to="/grammar" className="button">
-          {t('ui_nav_grammar')}
-        </Link>
-        <Link to="/exercises" className="button">
-          {t('ui_nav_exercises')}
-        </Link>
-      </div>
-
-      <section style={{ marginTop: '40px', textAlign: 'left' }}>
+        <section style={{ marginTop: '40px', textAlign: 'left' }}>
         <h2>{t('ui_home_why_choose_us_title') || 'Why Choose Us?'}</h2>
         <ul>
           <li>{t('ui_home_feature_1') || 'Structured lessons...'}</li>
