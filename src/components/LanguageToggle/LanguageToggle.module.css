@@ -1,0 +1,16 @@
+.toggle {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-left: 10px; /* Example spacing */
+}
+
+.toggle:focus {
+  outline: 2px solid var(--primary-color); /* Use your global primary color if defined */
+  border-color: var(--primary-color);
+}
+
+/* You can add more specific styles here */

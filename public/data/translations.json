@@ -1,50 +1,335 @@
 {
   "en": {
+    "app_title": "A2 Dutch Learner",
+
+    "loading": "Loading...",
+    "error_loading_data": "Error loading data",
+
     "nav_home": "Home",
     "nav_lessons": "Lessons",
     "nav_grammar": "Grammar",
     "nav_exercises": "Exercises",
-    "page_title_lessons": "Dutch Lessons",
-    "page_title_grammar": "Dutch Grammar",
-    "page_title_exercises": "Practice Exercises",
-    "greeting_title": "Greetings",
-    "greeting_explanation": "Learn how to greet people in Dutch.",
-    "lidwoorden_title": "Articles (De/Het)",
-    "lidwoorden_explanation": "Understand when to use 'de' and 'het'.",
+
+    "page_title_lessons": "Dutch Lessons for A2",
+    "page_title_grammar": "Dutch Grammar A2",
+    "page_title_exercises": "Practice Exercises A2",
+
+    "view_lesson_button": "View Lesson",
+    "view_topic_button": "View Topic",
+    "practice_this_lesson": "Practice this Lesson",
+    "practice_this_topic_button": "Practice this Topic",
+    "back_to_lessons_list_button": "Back to Lessons",
+    "back_to_grammar_list_button": "Back to Grammar List",
+
+    "lesson_not_found": "Lesson not found.",
+    "grammar_topic_not_found": "Grammar topic not found.",
+    "grammar_topic_not_found_error": "Grammar topic not found.",
+    "no_lessons_found": "No lessons found.",
+    "no_grammar_topics_found": "No grammar topics found.",
+
+    "example_sentences_title": "Example Sentences",
+    "dialogues_title": "Dialogues",
+    "vocabulary_title": "Vocabulary",
+    "common_mistakes_title": "Common Mistakes",
+    "rules_summary_title": "Rules Summary",
+
     "show_answer": "Show Answer",
     "next_question": "Next Question",
-    "submit_quiz": "Submit Quiz"
+    "submit_quiz": "Submit Quiz",
+    "your_score": "Your Score",
+    "quiz_completed": "Quiz Completed!",
+    "try_again_button": "Try Again",
+    "back_to_exercises_button": "Back to Exercises",
+    "select_topic_prompt": "Select a topic to practice:",
+    "no_exercises_available": "No exercises available for this selection.",
+    "exercises_coming_soon": "Exercises will be available here soon!",
 
+    "feedback_correct_general": "Correct!",
+    "feedback_incorrect_try_again": "Incorrect. Please try again.",
+    "feedback_correct_lidwoord_het": "Correct! 'Het' is used here.",
+    "feedback_incorrect_lidwoord_check_rules": "Not quite. Remember the rules for 'de' and 'het'.",
+    "feedback_correct_word_order": "Excellent! Correct word order.",
+    "feedback_incorrect_check_svo": "Incorrect. Pay attention to the Subject-Verb-Object order.",
+
+    "home_welcome_title": "Welcome to A2 Dutch Learner!",
+    "home_welcome_message": "Start your journey to mastering A2 level Dutch with our comprehensive lessons, grammar explanations, and practice exercises.",
+    "home_why_choose_us_title": "Why Choose Us?",
+    "home_feature_1": "Structured lessons specifically designed for A2 level.",
+    "home_feature_2": "Detailed grammar explanations with clear examples.",
+    "home_feature_3": "A wide variety of interactive exercises and quizzes.",
+    "home_feature_4": "User interface available in English, Dutch, and Tagalog (learning content is in Dutch).",
+
+    "lessons_page_intro": "Browse through our A2 level Dutch lessons. Click on a lesson to start learning.",
+    "grammar_page_intro": "Explore various Dutch grammar topics. Click on a topic to learn more.",
+
+    "lesson_expl_default": "Lesson explanation will appear here.",
+    "grammar_expl_default": "Grammar explanation will appear here.",
+
+    "theme_greetings": "Greetings & Introductions",
+    "lesson_title_greetings": "Hello & How Are You?",
+    "lesson_expl_greetings": "This lesson covers essential Dutch greetings, farewells, and how to ask how someone is.",
+    "dialogue_bakery_title": "At the Bakery",
+    "Klant": "Customer",
+    "Bakker": "Baker",
+    "vocab_morning_def": "The part of the day from sunrise to noon.",
+    "vocab_thankyou_def": "A polite expression used to show gratitude.",
+
+    "theme_numbers": "Numbers & Counting",
+    "lesson_title_numbers": "Counting from 1 to 100",
+    "lesson_expl_numbers": "Learn to count in Dutch, from basic numbers to larger figures.",
+
+    "theme_travel": "Traveling",
+    "lesson_title_travel_tickets": "Buying Train Tickets",
+    "lesson_expl_travel_tickets": "Learn how to ask for and buy tickets for public transport.",
+
+    "theme_food": "Food & Drink",
+    "lesson_title_food_restaurant": "Ordering in a Restaurant",
+    "lesson_expl_food_restaurant": "Practice phrases for ordering food and drinks in a Dutch restaurant.",
+
+    "grammar_title_lidwoorden": "Articles (De/Het)",
+    "grammar_expl_lidwoorden": "Understand the rules for using the definite articles 'de' and 'het' in Dutch. This is a fundamental part of Dutch grammar.",
+    "lidwoorden_rule_common_nouns": "Generally, 'de' is used for common gender nouns.",
+    "lidwoorden_rule_diminutives": "'Het' is always used for diminutive nouns (ending in -je, -tje, -pje, etc.).",
+    "lidwoorden_common_mistake_1": "A common mistake is using 'de' for 'het-woorden' or vice-versa. Practice helps!",
+
+    "grammar_title_pronouns_personal": "Personal Pronouns",
+    "grammar_expl_pronouns_personal": "Learn about Dutch personal pronouns (ik, jij, hij, zij, het, wij, jullie, zij) in both subject and object forms.",
+    "pronouns_subj_first_person": "First person subject pronoun.",
+    "pronouns_obj_third_person_fem": "Third person feminine object pronoun.",
+    "pronouns_common_mistake_1": "Confusing 'hen' and 'hun' is common for native speakers too!",
+
+    "grammar_title_verb_conjugation_present": "Verb Conjugation (Present Tense)",
+    "grammar_expl_verb_conjugation_present": "Master the conjugation of regular and common irregular verbs in the present tense (tegenwoordige tijd).",
+    "verb_conjugation_present_rule_regular": "Regular verbs follow a set pattern based on the stem.",
+    "verb_conjugation_present_common_mistake_1": "Forgetting the -t for 'jij/u/hij/zij/het' forms.",
+
+    "grammar_title_word_order_main": "Word Order (Main Clauses)",
+    "grammar_expl_word_order_main": "Learn the basic SVO (Subject-Verb-Object) word order in Dutch main clauses and how it changes with inversions (questions, or when starting with a time/place phrase).",
+    "word_order_svo": "Standard subject-verb-object order.",
+    "word_order_inversion_question": "Verb comes first in a yes/no question.",
+
+    "footer_text": "Your A2 Dutch Learning Companion"
   },
   "nl": {
-    "nav_home": "Home", 
+    "app_title": "A2 Nederlands Leren",
+
+    "loading": "Laden...",
+    "error_loading_data": "Fout bij het laden van gegevens",
+
+    "nav_home": "Home",
+    "nav_lessons": "Lessen",
     "nav_grammar": "Grammatica",
     "nav_exercises": "Oefeningen",
-    "page_title_lessons": "Nederlandse Lessen",
-    "page_title_grammar": "Nederlandse Grammatica",
-    "page_title_exercises": "Oefeningen",
-    "greeting_title": "Begroetingen",
-    "greeting_explanation": "Leer hoe je mensen in het Nederlands begroet.",
-    "lidwoorden_title": "Lidwoorden (De/Het)",
-    "lidwoorden_explanation": "Begrijp wanneer je 'de' en 'het' gebruikt.",
+
+    "page_title_lessons": "Nederlandse Lessen voor A2",
+    "page_title_grammar": "Nederlandse Grammatica A2",
+    "page_title_exercises": "Oefeningen A2",
+
+    "view_lesson_button": "Bekijk Les",
+    "view_topic_button": "Bekijk Onderwerp",
+    "practice_this_lesson": "Oefen deze Les",
+    "practice_this_topic_button": "Oefen dit Onderwerp",
+    "back_to_lessons_list_button": "Terug naar Lessen",
+    "back_to_grammar_list_button": "Terug naar Grammatica",
+
+    "lesson_not_found": "Les niet gevonden.",
+    "grammar_topic_not_found": "Grammaticaonderwerp niet gevonden.",
+    "grammar_topic_not_found_error": "Grammaticaonderwerp niet gevonden.",
+    "no_lessons_found": "Geen lessen gevonden.",
+    "no_grammar_topics_found": "Geen grammaticaonderwerpen gevonden.",
+
+    "example_sentences_title": "Voorbeeldzinnen",
+    "dialogues_title": "Dialogen",
+    "vocabulary_title": "Woordenschat",
+    "common_mistakes_title": "Veelgemaakte Fouten",
+    "rules_summary_title": "Regel Samenvatting",
+
     "show_answer": "Toon Antwoord",
     "next_question": "Volgende Vraag",
-    "submit_quiz": "Quiz Indienen"
+    "submit_quiz": "Quiz Indienen",
+    "your_score": "Jouw Score",
+    "quiz_completed": "Quiz Voltooid!",
+    "try_again_button": "Probeer Opnieuw",
+    "back_to_exercises_button": "Terug naar Oefeningen",
+    "select_topic_prompt": "Selecteer een onderwerp om te oefenen:",
+    "no_exercises_available": "Geen oefeningen beschikbaar voor deze selectie.",
+    "exercises_coming_soon": "Oefeningen zijn hier binnenkort beschikbaar!",
+
+    "feedback_correct_general": "Correct!",
+    "feedback_incorrect_try_again": "Incorrect. Probeer het opnieuw.",
+    "feedback_correct_lidwoord_het": "Correct! 'Het' wordt hier gebruikt.",
+    "feedback_incorrect_lidwoord_check_rules": "Niet helemaal. Denk aan de regels voor 'de' en 'het'.",
+    "feedback_correct_word_order": "Uitstekend! Correcte woordvolgorde.",
+    "feedback_incorrect_check_svo": "Incorrect. Let op de Onderwerp-Werkwoord-Object volgorde.",
+
+    "home_welcome_title": "Welkom bij A2 Nederlands Leren!",
+    "home_welcome_message": "Begin je reis naar het beheersen van A2-niveau Nederlands met onze uitgebreide lessen, grammatica-uitleg en oefeningen.",
+    "home_why_choose_us_title": "Waarom Voor Ons Kiezen?",
+    "home_feature_1": "Gestructureerde lessen speciaal voor A2-niveau.",
+    "home_feature_2": "Gedetailleerde grammatica-uitleg met duidelijke voorbeelden.",
+    "home_feature_3": "Een breed scala aan interactieve oefeningen en quizzen.",
+    "home_feature_4": "Gebruikersinterface beschikbaar in het Engels, Nederlands en Tagalog (lesmateriaal is in het Nederlands).",
+
+    "lessons_page_intro": "Blader door onze Nederlandse lessen op A2-niveau. Klik op een les om te beginnen met leren.",
+    "grammar_page_intro": "Ontdek verschillende Nederlandse grammaticaonderwerpen. Klik op een onderwerp voor meer informatie.",
+
+    "lesson_expl_default": "Uitleg van de les komt hier.",
+    "grammar_expl_default": "Grammatica-uitleg komt hier.",
+
+    "theme_greetings": "Begroetingen & Kennismaken",
+    "lesson_title_greetings": "Hallo & Hoe Gaat Het?",
+    "lesson_expl_greetings": "Deze les behandelt essentiële Nederlandse begroetingen, afscheid nemen en hoe je vraagt hoe het met iemand gaat.",
+    "dialogue_bakery_title": "Bij de Bakker",
+    "Klant": "Klant",
+    "Bakker": "Bakker",
+    "vocab_morning_def": "Het deel van de dag van zonsopgang tot de middag.",
+    "vocab_thankyou_def": "Een beleefde uitdrukking om dankbaarheid te tonen.",
+
+    "theme_numbers": "Getallen & Tellen",
+    "lesson_title_numbers": "Tellen van 1 tot 100",
+    "lesson_expl_numbers": "Leer tellen in het Nederlands, van basisgetallen tot grotere cijfers.",
+
+    "theme_travel": "Reizen",
+    "lesson_title_travel_tickets": "Treinkaartjes Kopen",
+    "lesson_expl_travel_tickets": "Leer hoe je kaartjes voor het openbaar vervoer vraagt en koopt.",
+
+    "theme_food": "Eten & Drinken",
+    "lesson_title_food_restaurant": "Bestellen in een Restaurant",
+    "lesson_expl_food_restaurant": "Oefen zinnen voor het bestellen van eten en drinken in een Nederlands restaurant.",
+
+    "grammar_title_lidwoorden": "Lidwoorden (De/Het)",
+    "grammar_expl_lidwoorden": "Begrijp de regels voor het gebruik van de bepaalde lidwoorden 'de' en 'het' in het Nederlands. Dit is een fundamenteel onderdeel van de Nederlandse grammatica.",
+    "lidwoorden_rule_common_nouns": "Over het algemeen wordt 'de' gebruikt voor de-woorden (mannelijk/vrouwelijk).",
+    "lidwoorden_rule_diminutives": "'Het' wordt altijd gebruikt voor verkleinwoorden (eindigend op -je, -tje, -pje, etc.).",
+    "lidwoorden_common_mistake_1": "Een veelgemaakte fout is het gebruik van 'de' voor 'het-woorden' of andersom. Oefening baart kunst!",
+
+    "grammar_title_pronouns_personal": "Persoonlijke Voornaamwoorden",
+    "grammar_expl_pronouns_personal": "Leer over Nederlandse persoonlijke voornaamwoorden (ik, jij, hij, zij, het, wij, jullie, zij) in zowel onderwerps- als objectvorm.",
+    "pronouns_subj_first_person": "Eerste persoon onderwerpvoornaamwoord.",
+    "pronouns_obj_third_person_fem": "Derde persoon vrouwelijk objectvoornaamwoord.",
+    "pronouns_common_mistake_1": "Het verwarren van 'hen' en 'hun' komt ook vaak voor bij moedertaalsprekers!",
+
+    "grammar_title_verb_conjugation_present": "Werkwoordvervoeging (Tegenwoordige Tijd)",
+    "grammar_expl_verb_conjugation_present": "Beheers de vervoeging van regelmatige en veelvoorkomende onregelmatige werkwoorden in de tegenwoordige tijd.",
+    "verb_conjugation_present_rule_regular": "Regelmatige werkwoorden volgen een vast patroon gebaseerd op de stam.",
+    "verb_conjugation_present_common_mistake_1": "Het vergeten van de -t bij 'jij/u/hij/zij/het' vormen.",
+
+    "grammar_title_word_order_main": "Woordvolgorde (Hoofdzinnen)",
+    "grammar_expl_word_order_main": "Leer de basis SVO (Onderwerp-Werkwoord-Object) woordvolgorde in Nederlandse hoofdzinnen en hoe deze verandert bij inversie (vragen, of wanneer een zin begint met een tijd/plaatsbepaling).",
+    "word_order_svo": "Standaard onderwerp-werkwoord-object volgorde.",
+    "word_order_inversion_question": "Werkwoord komt eerst in een ja/nee vraag.",
+
+    "footer_text": "Jouw A2 Nederlands Leertool"
   },
   "tl": {
-    "nav_home": "Home", 
+    "app_title": "A2 Dutch Learner (Tagalog)",
+
+    "loading": "Nilo-load...",
+    "error_loading_data": "May error sa pag-load ng data",
+
+    "nav_home": "Home",
     "nav_lessons": "Mga Aralin",
     "nav_grammar": "Balarila",
     "nav_exercises": "Mga Pagsasanay",
-    "page_title_lessons": "Mga Aralin sa Dutch",
-    "page_title_grammar": "Balarila ng Dutch",
-    "page_title_exercises": "Mga Pagsasanay",
-    "greeting_title": "Mga Pagbati",
-    "greeting_explanation": "Alamin kung paano bumati ng mga tao sa Dutch.",
-    "lidwoorden_title": "Mga Artikulo (De/Het)",
-    "lidwoorden_explanation": "Unawain kung kailan gagamitin ang 'de' at 'het'.",
+
+    "page_title_lessons": "Mga Aralin sa Dutch para sa A2",
+    "page_title_grammar": "Balarila ng Dutch A2",
+    "page_title_exercises": "Mga Pagsasanay sa A2",
+
+    "view_lesson_button": "Tingnan ang Aralin",
+    "view_topic_button": "Tingnan ang Paksa",
+    "practice_this_lesson": "Sanayin ang Araling Ito",
+    "practice_this_topic_button": "Sanayin ang Paksang Ito",
+    "back_to_lessons_list_button": "Balik sa Mga Aralin",
+    "back_to_grammar_list_button": "Balik sa Balarila",
+
+    "lesson_not_found": "Hindi nahanap ang aralin.",
+    "grammar_topic_not_found": "Hindi nahanap ang paksa sa balarila.",
+    "grammar_topic_not_found_error": "Hindi nahanap ang paksa sa balarila.",
+    "no_lessons_found": "Walang nahanap na aralin.",
+    "no_grammar_topics_found": "Walang nahanap na paksa sa balarila.",
+
+    "example_sentences_title": "Mga Halimbawang Pangungusap",
+    "dialogues_title": "Mga Dayalogo",
+    "vocabulary_title": "Bokabularyo",
+    "common_mistakes_title": "Mga Karaniwang Pagkakamali",
+    "rules_summary_title": "Buod ng mga Alituntunin",
+
     "show_answer": "Ipakita ang Sagot",
     "next_question": "Susunod na Tanong",
-    "submit_quiz": "Ipasa ang Pagsusulit"
+    "submit_quiz": "Ipasa ang Pagsusulit",
+    "your_score": "Iyong Iskor",
+    "quiz_completed": "Nakumpleto ang Pagsusulit!",
+    "try_again_button": "Subukang Muli",
+    "back_to_exercises_button": "Balik sa Mga Pagsasanay",
+    "select_topic_prompt": "Pumili ng paksa na nais sanayin:",
+    "no_exercises_available": "Walang magagamit na pagsasanay para sa piniling ito.",
+    "exercises_coming_soon": "Malapit nang magkaroon ng mga pagsasanay dito!",
+
+    "feedback_correct_general": "Tama!",
+    "feedback_incorrect_try_again": "Mali. Pakisubukang muli.",
+    "feedback_correct_lidwoord_het": "Tama! 'Het' ang ginagamit dito.",
+    "feedback_incorrect_lidwoord_check_rules": "Hindi masyado. Tandaan ang mga tuntunin para sa 'de' at 'het'.",
+    "feedback_correct_word_order": "Magaling! Tamang ayos ng mga salita.",
+    "feedback_incorrect_check_svo": "Mali. Bigyang-pansin ang ayos na Simuno-Pandiwa-Layon.",
+
+    "home_welcome_title": "Maligayang Pagdating sa A2 Dutch Learner!",
+    "home_welcome_message": "Simulan ang iyong paglalakbay sa pag-master ng A2 level Dutch gamit ang aming komprehensibong mga aralin, paliwanag sa balarila, at mga pagsasanay.",
+    "home_why_choose_us_title": "Bakit Kami ang Pipiliin?",
+    "home_feature_1": "Nakabalangkas na mga aralin partikular para sa A2 level.",
+    "home_feature_2": "Detalyadong paliwanag sa balarila na may malinaw na mga halimbawa.",
+    "home_feature_3": "Maraming iba't ibang interaktibong pagsasanay at quiz.",
+    "home_feature_4": "User interface na available sa English, Dutch, at Tagalog (ang nilalaman ng pag-aaral ay nasa Dutch).",
+
+    "lessons_page_intro": "Mag-browse sa aming mga aralin sa Dutch para sa A2 level. I-click ang isang aralin para magsimulang matuto.",
+    "grammar_page_intro": "Galugarin ang iba't ibang paksa sa balarila ng Dutch. I-click ang isang paksa para matuto pa.",
+
+    "lesson_expl_default": "Ang paliwanag ng aralin ay lalabas dito.",
+    "grammar_expl_default": "Ang paliwanag sa balarila ay lalabas dito.",
+
+    "theme_greetings": "Mga Pagbati & Pagpapakilala",
+    "lesson_title_greetings": "Hello & Kumusta Ka?",
+    "lesson_expl_greetings": "Saklaw ng araling ito ang mahahalagang pagbating Dutch, pamamaalam, at kung paano magtanong kung kumusta ang isang tao.",
+    "dialogue_bakery_title": "Sa Panaderya",
+    "Klant": "Kostumer",
+    "Bakker": "Panadero",
+    "vocab_morning_def": "Ang bahagi ng araw mula pagsikat ng araw hanggang tanghali.",
+    "vocab_thankyou_def": "Isang magalang na ekspresyon na ginagamit upang magpakita ng pasasalamat.",
+
+    "theme_numbers": "Mga Numero & Pagbilang",
+    "lesson_title_numbers": "Pagbilang mula 1 hanggang 100",
+    "lesson_expl_numbers": "Matutong bumilang sa Dutch, mula sa mga pangunahing numero hanggang sa mas malalaking pigura.",
+
+    "theme_travel": "Paglalakbay",
+    "lesson_title_travel_tickets": "Pagbili ng Tiket sa Tren",
+    "lesson_expl_travel_tickets": "Matutunan kung paano magtanong at bumili ng tiket para sa pampublikong transportasyon.",
+
+    "theme_food": "Pagkain & Inumin",
+    "lesson_title_food_restaurant": "Pag-order sa Restaurant",
+    "lesson_expl_food_restaurant": "Sanayin ang mga parirala para sa pag-order ng pagkain at inumin sa isang Dutch restaurant.",
+
+    "grammar_title_lidwoorden": "Mga Artikulo (De/Het)",
+    "grammar_expl_lidwoorden": "Unawain ang mga tuntunin sa paggamit ng mga tiyak na artikulo na 'de' at 'het' sa Dutch. Ito ay isang pangunahing bahagi ng balarila ng Dutch.",
+    "lidwoorden_rule_common_nouns": "Karaniwan, ang 'de' ay ginagamit para sa mga pangngalang may karaniwang kasarian.",
+    "lidwoorden_rule_diminutives": "Ang 'Het' ay palaging ginagamit para sa mga diminutive na pangngalan (nagtatapos sa -je, -tje, -pje, atbp.).",
+    "lidwoorden_common_mistake_1": "Isang karaniwang pagkakamali ay ang paggamit ng 'de' para sa 'het-woorden' o kabaliktaran. Makakatulong ang pagsasanay!",
+
+    "grammar_title_pronouns_personal": "Mga Personal na Panghalip",
+    "grammar_expl_pronouns_personal": "Alamin ang tungkol sa mga personal na panghalip sa Dutch (ik, jij, hij, zij, het, wij, jullie, zij) sa parehong anyong simuno at layon.",
+    "pronouns_subj_first_person": "Unang panauhang panghalip na simuno.",
+    "pronouns_obj_third_person_fem": "Ikatlong panauhang pambabaeng panghalip na layon.",
+    "pronouns_common_mistake_1": "Ang pagkalito sa 'hen' at 'hun' ay karaniwan din sa mga katutubong nagsasalita!",
+
+    "grammar_title_verb_conjugation_present": "Pandiwa (Kasalukuyang Panahunan)",
+    "grammar_expl_verb_conjugation_present": "Masterin ang pagbabanghay ng mga regular at karaniwang di-regular na pandiwa sa kasalukuyang panahunan (tegenwoordige tijd).",
+    "verb_conjugation_present_rule_regular": "Ang mga regular na pandiwa ay sumusunod sa isang takdang pattern batay sa stem.",
+    "verb_conjugation_present_common_mistake_1": "Ang pagkalimot sa -t para sa mga anyong 'jij/u/hij/zij/het'.",
+
+    "grammar_title_word_order_main": "Ayos ng mga Salita (Pangunahing Sugnay)",
+    "grammar_expl_word_order_main": "Alamin ang pangunahing ayos ng SVO (Simuno-Pandiwa-Layon) sa mga pangunahing sugnay sa Dutch at kung paano ito nagbabago sa mga inversion (tanong, o kapag nagsisimula sa isang parirala ng oras/lugar).",
+    "word_order_svo": "Pamantayang ayos ng simuno-pandiwa-layon.",
+    "word_order_inversion_question": "Nauuna ang pandiwa sa isang tanong na oo/hindi.",
+
+    "footer_text": "Ang Iyong Kasama sa Pag-aaral ng A2 Dutch"
   }
 }
