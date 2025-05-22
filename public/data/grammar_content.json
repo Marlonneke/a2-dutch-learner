@@ -1,0 +1,76 @@
+[
+  {
+    "id": "de-het-articles",
+    "titleKey": "grammar_title_de_het",
+    "explanationKey": "grammar_expl_de_het_intro",
+    "rules": [
+      { "ruleKey": "grammar_rule_de_masc_fem", "exampleDutch": "de man, de vrouw, de tafel", "exampleHintKey": "grammar_rule_de_masc_fem_hint" },
+      { "ruleKey": "grammar_rule_het_neuter", "exampleDutch": "het huis, het boek, het meisje", "exampleHintKey": "grammar_rule_het_neuter_hint"  },
+      { "ruleKey": "grammar_rule_de_plural", "exampleDutch": "de mannen, de huizen, de boeken", "exampleHintKey": "grammar_rule_de_plural_hint" },
+      { "ruleKey": "grammar_rule_het_diminutives", "exampleDutch": "het tafeltje, het boekje, het mannetje", "exampleHintKey": "grammar_rule_het_diminutives_hint" },
+      { "ruleKey": "grammar_rule_het_languages_materials", "exampleDutch": "het Nederlands, het hout, het goud", "exampleHintKey": "grammar_rule_het_lang_mat_hint" },
+      { "ruleKey": "grammar_rule_het_infinitives_as_nouns", "exampleDutch": "het lezen, het schrijven", "exampleHintKey": "grammar_rule_het_infinitives_hint" }
+    ],
+    "commonMistakes": [
+      { "mistakeKey": "grammar_de_het_mistake_guessing", "correctionKey": "grammar_de_het_mistake_guessing_corr" }
+    ],
+    "notesKey": "grammar_de_het_notes_memorization"
+  },
+  {
+    "id": "personal-pronouns",
+    "titleKey": "grammar_title_personal_pronouns",
+    "explanationKey": "grammar_expl_personal_pronouns_intro",
+    "tables": [
+      {
+        "titleKey": "grammar_table_pronouns_subject_title",
+        "headers": ["Nederlands", "Engels", "Voorbeeld (NL)"],
+        "rows": [
+          ["ik", "I", "Ik lees een boek."],
+          ["jij/je", "you (singular, informal)", "Jij spreekt goed Nederlands."],
+          ["u", "you (singular/plural, formal)", "Kunt u mij helpen?"],
+          ["hij", "he", "Hij woont in Amsterdam."],
+          ["zij/ze (singular)", "she", "Zij werkt als lerares."],
+          ["het", "it", "Het regent vandaag."],
+          ["wij/we", "we", "Wij gaan naar de film."],
+          ["jullie", "you (plural, informal)", "Hebben jullie honger?"],
+          ["zij/ze (plural)", "they", "Zij komen uit Spanje."]
+        ]
+      },
+      {
+        "titleKey": "grammar_table_pronouns_object_title",
+        "headers": ["Nederlands", "Engels", "Voorbeeld (NL)"],
+        "rows": [
+          ["mij/me", "me", "Hij geeft mij een cadeau."],
+          ["jou/je", "you (singular, informal)", "Ik zie jou morgen."],
+          ["u", "you (singular/plural, formal)", "Mag ik u iets vragen?"],
+          ["hem", "him", "Ik heb hem geholpen."],
+          ["haar/r/ze", "her", "Geef het aan haar."],
+          ["het", "it", "Ik vind het leuk."],
+          ["ons", "us", "Zij nodigt ons uit."],
+          ["jullie", "you (plural, informal)", "Ik bel jullie later."],
+          ["hen/hun/ze", "them", "Ik heb hen gezien. / Ik geef hun een boek."]
+        ]
+      }
+    ],
+    "commonMistakesKey": "grammar_pronouns_mistakes_hen_hun",
+    "notesKey": "grammar_pronouns_notes_je_ze"
+  },
+  {
+    "id": "present-tense-regular",
+    "titleKey": "grammar_title_present_tense_regular",
+    "explanationKey": "grammar_expl_present_tense_regular_intro",
+    "rules": [
+        {"ruleKey": "grammar_rule_present_tense_ik", "verb": "werken", "conjugation": "ik werk"},
+        {"ruleKey": "grammar_rule_present_tense_jij", "verb": "werken", "conjugation": "jij werkt / werk jij?"},
+        {"ruleKey": "grammar_rule_present_tense_hij_zij_het_u", "verb": "werken", "conjugation": "hij/zij/het/u werkt"},
+        {"ruleKey": "grammar_rule_present_tense_wij_jullie_zij", "verb": "werken", "conjugation": "wij/jullie/zij werken"}
+    ],
+    "exampleSentences": [
+        {"dutch": "Ik woon in Utrecht.", "englishHint": "I live in Utrecht. (wonen)"},
+        {"dutch": "Jij leert snel Nederlands.", "englishHint": "You learn Dutch quickly. (leren)"},
+        {"dutch": "Zij maakt heerlijke taarten.", "englishHint": "She makes delicious cakes. (maken)"},
+        {"dutch": "Wij spelen elke zaterdag voetbal.", "englishHint": "We play football every Saturday. (spelen)"}
+    ],
+    "notesKey": "grammar_present_tense_notes_stam_t"
+  }
+]

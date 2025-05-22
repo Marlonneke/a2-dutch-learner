@@ -1,0 +1,107 @@
+[
+  {
+    "id": "greetings-introductions",
+    "level": "A1-A2",
+    "themeKey": "lesson_theme_greetings",
+    "titleKey": "lesson_title_greetings_full",
+    "explanationKey": "lesson_expl_greetings_full",
+    "coverImage": "/images/lessons/meeting.jpg",
+    "vocabulary": [
+      { "dutch": "Hallo", "definitionKey": "lesson_vocab_hello_def", "audio": "/audio/greetings/hallo.mp3" },
+      { "dutch": "Goedemorgen", "definitionKey": "lesson_vocab_goodmorning_def", "audio": "/audio/greetings/goedemorgen.mp3" },
+      { "dutch": "Goedemiddag", "definitionKey": "lesson_vocab_goodafternoon_def" },
+      { "dutch": "Goedenavond", "definitionKey": "lesson_vocab_goodevening_def" },
+      { "dutch": "Welterusten", "definitionKey": "lesson_vocab_goodnight_def" },
+      { "dutch": "Tot ziens", "definitionKey": "lesson_vocab_seeyoulater_def" },
+      { "dutch": "Doei / Dag", "definitionKey": "lesson_vocab_bye_def" },
+      { "dutch": "Hoe gaat het met u/jou?", "definitionKey": "lesson_vocab_howareyou_def" },
+      { "dutch": "Goed, dank u/je.", "definitionKey": "lesson_vocab_goodthanks_def" },
+      { "dutch": "Het gaat.", "definitionKey": "lesson_vocab_itsgoing_def" },
+      { "dutch": "Niet zo goed.", "definitionKey": "lesson_vocab_notsogood_def" },
+      { "dutch": "Mijn naam is...", "definitionKey": "lesson_vocab_mynameis_def" },
+      { "dutch": "Ik ben...", "definitionKey": "lesson_vocab_iam_def" },
+      { "dutch": "Aangenaam (kennis te maken).", "definitionKey": "lesson_vocab_nicetomeetyou_def" }
+    ],
+    "exampleSentences": [
+      { "dutch": "Hallo, ik ben Anna. Hoe heet jij?", "englishHint": "Hello, I am Anna. What is your name?" },
+      { "dutch": "Goedemorgen, meneer de Vries.", "englishHint": "Good morning, Mr. de Vries." },
+      { "dutch": "Hoe gaat het met jou, Peter? Het gaat wel, en met jou?", "englishHint": "How are you, Peter? It's going okay, and you?" }
+    ],
+    "dialogues": [
+      {
+        "titleKey": "lesson_dialogue_first_meeting_title",
+        "characters": ["Persoon A", "Persoon B"],
+        "lines": [
+          { "speaker": "Persoon A", "line": "Goedemiddag! Ik ben Mark." },
+          { "speaker": "Persoon B", "line": "Hallo Mark, ik ben Sophie. Aangenaam." },
+          { "speaker": "Persoon A", "line": "Aangenaam, Sophie. Hoe gaat het met je?" },
+          { "speaker": "Persoon B", "line": "Heel goed, dank je. En met jou?" },
+          { "speaker": "Persoon A", "line": "Ook goed, dank je." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "numbers-0-100",
+    "level": "A1",
+    "themeKey": "lesson_theme_numbers",
+    "titleKey": "lesson_title_numbers_0_100",
+    "explanationKey": "lesson_expl_numbers_0_100",
+    "vocabulary": [
+      { "dutch": "nul (0)", "definitionKey": "lesson_vocab_zero_def" },
+      { "dutch": "een (1)", "definitionKey": "lesson_vocab_one_def" },
+      { "dutch": "twee (2)", "definitionKey": "lesson_vocab_two_def" },
+      { "dutch": "drie (3)", "definitionKey": "lesson_vocab_three_def" },
+      { "dutch": "vier (4)" }, { "dutch": "vijf (5)" }, { "dutch": "zes (6)" },
+      { "dutch": "zeven (7)" }, { "dutch": "acht (8)" }, { "dutch": "negen (9)" },
+      { "dutch": "tien (10)", "definitionKey": "lesson_vocab_ten_def"},
+      { "dutch": "elf (11)" }, { "dutch": "twaalf (12)" }, { "dutch": "dertien (13)" },
+      { "dutch": "twintig (20)", "definitionKey": "lesson_vocab_twenty_def" },
+      { "dutch": "eenentwintig (21)", "definitionKey": "lesson_vocab_twentyone_def_hint" },
+      { "dutch": "dertig (30)" }, { "dutch": "veertig (40)" }, { "dutch": "vijftig (50)" },
+      { "dutch": "honderd (100)", "definitionKey": "lesson_vocab_hundred_def" }
+    ],
+    "exampleSentences": [
+      { "dutch": "Ik heb twee broers en één zus.", "englishHint": "I have two brothers and one sister." },
+      { "dutch": "Een kamer kost vijfenzestig euro per nacht.", "englishHint": "A room costs sixty-five euros per night." },
+      { "dutch": "Zij is achtentwintig jaar oud.", "englishHint": "She is twenty-eight years old."}
+    ],
+    "notesKey": "lesson_numbers_notes_pattern"
+  },
+  {
+    "id": "asking-for-directions",
+    "level": "A2",
+    "themeKey": "lesson_theme_travel",
+    "titleKey": "lesson_title_directions",
+    "explanationKey": "lesson_expl_directions",
+    "vocabulary": [
+        {"dutch": "Waar is...?", "definitionKey": "lesson_vocab_whereis_def"},
+        {"dutch": "Hoe kom ik bij...?", "definitionKey": "lesson_vocab_howtogetto_def"},
+        {"dutch": "links / linksaf", "definitionKey": "lesson_vocab_left_def"},
+        {"dutch": "rechts / rechtsaf", "definitionKey": "lesson_vocab_right_def"},
+        {"dutch": "rechtdoor", "definitionKey": "lesson_vocab_straighton_def"},
+        {"dutch": "de straat", "definitionKey": "lesson_vocab_street_def"},
+        {"dutch": "de hoek", "definitionKey": "lesson_vocab_corner_def"},
+        {"dutch": "het station", "definitionKey": "lesson_vocab_station_def"},
+        {"dutch": "het museum", "definitionKey": "lesson_vocab_museum_def"},
+        {"dutch": "de supermarkt", "definitionKey": "lesson_vocab_supermarket_def"}
+    ],
+    "exampleSentences": [
+        {"dutch": "Pardon, kunt u mij helpen? Waar is het dichtstbijzijnde postkantoor?", "englishHint": "Excuse me, can you help me? Where is the nearest post office?"},
+        {"dutch": "U gaat hier rechtdoor en dan de tweede straat links.", "englishHint": "You go straight ahead here and then the second street on the left."},
+        {"dutch": "Het museum is om de hoek, naast de bank.", "englishHint": "The museum is around the corner, next to the bank."}
+    ],
+    "dialogues": [{
+        "titleKey": "lesson_dialogue_directions_tourist_title",
+        "characters": ["Toerist", "Inwoner"],
+        "lines": [
+            {"speaker": "Toerist", "line": "Goedemiddag, sorry dat ik u stoor. Kunt u mij vertellen hoe ik bij het Rijksmuseum kom?"},
+            {"speaker": "Inwoner", "line": "Natuurlijk. U kunt het beste tram 2 of 12 nemen vanaf het Centraal Station. Stap uit bij de halte Rijksmuseum."},
+            {"speaker": "Toerist", "line": "Is het ver lopen vanaf hier?"},
+            {"speaker": "Inwoner", "line": "Ja, dat is best een stukje, ongeveer 30 minuten. Met de tram bent u er in 10 minuten."},
+            {"speaker": "Toerist", "line": "Oké, hartelijk dank voor uw hulp!"},
+            {"speaker": "Inwoner", "line": "Graag gedaan. Fijne dag!"}
+        ]
+    }]
+  }
+]

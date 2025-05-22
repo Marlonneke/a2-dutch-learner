@@ -1,0 +1,78 @@
+[
+  {
+    "id": "ex_greetings_001",
+    "lessonId": "greetings-introductions",
+    "type": "multiple-choice",
+    "question": "Je komt je buurman 's ochtends tegen. Wat zeg je?",
+    "options": ["Goedenavond", "Hallo", "Welterusten", "Goedemorgen"],
+    "correctAnswer": "Goedemorgen",
+    "feedbackKey_correct": "exercise_feedback_correct_greeting",
+    "feedbackKey_incorrect": "exercise_feedback_incorrect_greeting_morning"
+  },
+  {
+    "id": "ex_greetings_002",
+    "lessonId": "greetings-introductions",
+    "type": "fill-in-the-blank",
+    "questionParts": ["Hoe ", " het met jou?"], 
+    "correctAnswer": "gaat",
+    "prompt": "Vul het ontbrekende woord in.",
+    "feedbackKey_correct": "exercise_feedback_correct_general",
+    "feedbackKey_incorrect": "exercise_feedback_incorrect_hoe_gaat_het"
+  },
+  {
+    "id": "ex_numbers_001",
+    "lessonId": "numbers-0-100",
+    "type": "multiple-choice-image",
+    "question": "Hoeveel appels zie je?",
+    "image": "/images/exercises/3_apples.png", 
+    "options": ["twee", "drie", "vier", "vijf"],
+    "correctAnswer": "drie",
+    "feedbackKey_correct": "exercise_feedback_correct_counting"
+  },
+  {
+    "id": "ex_numbers_002",
+    "lessonId": "numbers-0-100",
+    "type": "fill-in-the-blank-audio",
+    "question": "Luister en schrijf het getal: ",
+    "audio": "/audio/numbers/zevenentwintig.mp3", 
+    "correctAnswer": "27",
+    "feedbackKey_correct": "exercise_feedback_correct_number_written"
+  },
+  {
+    "id": "ex_de_het_001",
+    "grammarId": "de-het-articles",
+    "type": "multiple-choice",
+    "question": "Kies het juiste lidwoord: ___ boek",
+    "options": ["de", "het", "een (onbepaald)"],
+    "correctAnswer": "het",
+    "feedbackKey_correct": "exercise_feedback_correct_article_het_boek"
+  },
+  {
+    "id": "ex_de_het_002",
+    "grammarId": "de-het-articles",
+    "type": "fill-in-the-blank",
+    "questionParts": ["", " meisje speelt buiten."],
+    "correctAnswer": "Het",
+    "prompt": "Vul 'de' of 'het' in.",
+    "feedbackKey_correct": "exercise_feedback_correct_article_het_meisje",
+    "feedbackKey_incorrect": "exercise_feedback_incorrect_article_diminutive"
+  },
+  {
+    "id": "ex_pronouns_001",
+    "grammarId": "personal-pronouns",
+    "type": "multiple-choice",
+    "question": "Jan is mijn broer. ___ is erg aardig.",
+    "options": ["Zij", "Hij", "Het", "Wij"],
+    "correctAnswer": "Hij",
+    "feedbackKey_correct": "exercise_feedback_correct_pronoun_hij"
+  },
+  {
+    "id": "ex_present_tense_001",
+    "grammarId": "present-tense-regular",
+    "type": "fill-in-the-blank",
+    "questionParts": ["Ik ", " (werken) in een winkel."],
+    "correctAnswer": "werk",
+    "prompt": "Vervoeg het werkwoord 'werken' in de tegenwoordige tijd.",
+    "feedbackKey_correct": "exercise_feedback_correct_verb_ik_werk"
+  }
+]

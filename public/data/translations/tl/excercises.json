@@ -1,0 +1,36 @@
+[
+  {
+    "id": "ex_greetings_001",
+    "lessonId": "greetings", // Link to lesson/grammar topic
+    "grammarId": null,
+    "type": "multiple-choice", // "fill-in-the-blank", "sentence- unscramble"
+    "question": "Wat zeg je als je iemand 's ochtends ziet?",
+    "options": ["Goedenavond", "Goedemiddag", "Goedemorgen", "Welterusten"],
+    "correctAnswer": "Goedemorgen",
+    "feedbackKey_correct": "feedback_correct_general",
+    "feedbackKey_incorrect": "feedback_incorrect_try_again"
+  },
+  {
+    "id": "ex_lidwoorden_001",
+    "lessonId": null,
+    "grammarId": "lidwoorden",
+    "type": "fill-in-the-blank",
+    "question": "Vul het juiste lidwoord in: ___ boek is interessant.", // Could also be a sentence parts like ["___", "boek is interessant"]
+    "correctAnswer": "Het",
+    "prompt": "Kies 'de' of 'het'.", // Dutch prompt
+    "feedbackKey_correct": "feedback_correct_lidwoord_het",
+    "feedbackKey_incorrect": "feedback_incorrect_lidwoord_check_rules"
+  },
+  {
+    "id": "ex_travel_001",
+    "lessonId": "travel", // Assuming a "travel" lesson
+    "grammarId": null,
+    "type": "sentence-order",
+    "question": "Zet de woorden in de juiste volgorde:",
+    "words": ["ik", "naar", "Amsterdam", "morgen", "ga"],
+    "correctAnswer": "Ik ga morgen naar Amsterdam.",
+    "feedbackKey_correct": "feedback_correct_word_order",
+    "feedbackKey_incorrect": "feedback_incorrect_check_svo"
+  }
+  // ... Many more exercises covering all topics
+]

@@ -1,0 +1,19 @@
+{
+  "exercise_show_answer_button": "Show Answer",
+  "exercise_next_question_button": "Next Question",
+  "exercise_submit_quiz_button": "Submit Quiz",
+  "exercise_your_score_message": "Your Score",
+  "exercise_quiz_completed_message": "Quiz Completed!",
+  "exercise_try_again_button": "Try Again",
+  "exercise_back_to_exercises_button": "Back to Exercises Overview",
+  "exercise_select_topic_prompt": "Select a topic to practice:",
+  "exercise_no_exercises_available_message": "No exercises available for this selection.",
+  "exercise_exercises_coming_soon_message": "Exercises for this topic will be available here soon!",
+  "exercise_feedback_correct_general": "Correct! Well done.",
+  "exercise_feedback_incorrect_try_again": "Incorrect. Please review the material and try again.",
+  "exercise_feedback_correct_lidwoord_het": "Correct! 'Het' is the right article here.",
+  "exercise_feedback_incorrect_lidwoord_check_rules": "Not quite. Remember the rules for 'de' and 'het'. Check if the noun is diminutive or falls under other 'het' categories.",
+  "exercise_feedback_correct_word_order": "Excellent! The word order is perfect.",
+  "exercise_feedback_incorrect_check_svo": "Incorrect. Pay close attention to the Subject-Verb-Object order or inversion rules for Dutch sentences.",
+  "exercise_fill_in_blank_prompt": "Fill in the blank:"
+}

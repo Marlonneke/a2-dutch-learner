@@ -1,0 +1,22 @@
+{
+  "grammar_expl_default": "Grammar explanation will appear here.",
+  "grammar_title_lidwoorden": "Articles (De/Het)",
+  "grammar_expl_lidwoorden": "Understand the fundamental rules for using the definite articles 'de' and 'het' in Dutch. Correct usage is essential for fluency and is a common challenge for learners.",
+  "grammar_lidwoorden_rule_common_nouns": "Generally, 'de' is used for common gender nouns (masculine/feminine).",
+  "grammar_lidwoorden_rule_diminutives": "'Het' is always used for diminutive nouns (words ending in -je, -tje, -pje, etc.).",
+  "grammar_lidwoorden_common_mistake_1": "A frequent mistake is using 'de' for 'het-woorden' or vice-versa, especially when guessing. Memorization and practice are key!",
+  "grammar_title_pronouns_personal": "Personal Pronouns",
+  "grammar_expl_pronouns_personal": "Learn about Dutch personal pronouns (e.g., ik, jij, hij, zij, het, wij, jullie, zij) and their usage in both subject and object forms within a sentence.",
+  "grammar_pronouns_subj_first_person": "First person subject pronoun (e.g., 'ik' - I).",
+  "grammar_pronouns_obj_third_person_fem": "Third person feminine object pronoun (e.g., 'haar' - her).",
+  "grammar_pronouns_common_mistake_1": "Confusing 'hen' (them - object, referring to people) and 'hun' (their - possessive; or to them - indirect object without preposition) is a common pitfall.",
+  "grammar_title_verb_conjugation_present": "Verb Conjugation (Present Tense)",
+  "grammar_expl_verb_conjugation_present": "Master the conjugation of regular and common irregular verbs in the present tense (tegenwoordige tijd - O.T.T.). This forms the backbone of everyday Dutch conversation.",
+  "grammar_verb_conjugation_present_rule_regular": "Regular verbs follow a set pattern based on the verb stem and the subject pronoun.",
+  "grammar_verb_conjugation_present_common_mistake_1": "Often, learners forget to add the '-t' for 'jij/u/hij/zij/het' forms with regular verbs.",
+  "grammar_title_word_order_main": "Word Order (Main Clauses)",
+  "grammar_expl_word_order_main": "Learn the basic SVO (Subject-Verb-Object) word order in Dutch main declarative clauses and how it changes to VSO with inversions (e.g., in questions, or when an adverbial phrase starts the sentence).",
+  "grammar_word_order_svo": "Standard subject-verb-object order for declarative sentences.",
+  "grammar_word_order_inversion_question": "The verb comes first in a standard yes/no question (Verb-Subject-Object/Other).",
+  "grammar_word_order_time_place_first": "When a time or place phrase starts the sentence, inversion occurs (Time/Place - Verb - Subject - Object)."
+}

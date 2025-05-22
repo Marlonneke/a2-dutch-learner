@@ -1,0 +1,40 @@
+[
+  {
+    "id": "greetings",
+    "level": "A1", 
+    "themeKey": "theme_greetings", // Translatable via translations.json
+    "titleKey": "lesson_title_greetings", // e.g., "Groeten en Kennismaken"
+    "explanationKey": "lesson_expl_greetings",
+    "coverImage": "/images/lessons/greetings.jpg", // Optional
+    "exampleSentences": [ // These are in Dutch and DO NOT get translated
+      { "dutch": "Hallo!", "englishHint": "Hello!" },
+      { "dutch": "Goedemorgen.", "englishHint": "Good morning." },
+      { "dutch": "Hoe gaat het met jou?", "englishHint": "How are you?" }
+    ],
+    "dialogues": [ // Dutch only
+        {
+            "titleKey": "dialogue_bakery_title",
+            "characters": ["Klant", "Bakker"],
+            "lines": [
+                {"speaker": "Klant", "line": "Goedemorgen, ik wil graag twee broden."},
+                {"speaker": "Bakker", "line": "Zeker, welke broden wilt u?"}
+            ]
+        }
+    ],
+    "vocabulary": [
+        {"dutch": "De ochtend", "definitionKey": "vocab_morning_def"},
+        {"dutch": "Dank u wel", "definitionKey": "vocab_thankyou_def"}
+    ]
+  },
+  {
+    "id": "numbers",
+    "level": "A1",
+    "themeKey": "theme_numbers",
+    "titleKey": "lesson_title_numbers", // "Getallen"
+    "explanationKey": "lesson_expl_numbers",
+    "exampleSentences": [
+      { "dutch": "Ik heb twee katten.", "englishHint": "I have two cats." },
+      { "dutch": "Een, twee, drie, vier, vijf." }
+    ]
+  }
+]
