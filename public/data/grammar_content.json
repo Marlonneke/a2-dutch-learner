@@ -1,23 +1,7 @@
 [
   {
-    "id": "de-het-articles",
-    "titleKey": "grammar_title_de_het",
-    "explanationKey": "grammar_expl_de_het_intro",
-    "rules": [
-      { "ruleKey": "grammar_rule_de_masc_fem", "exampleDutch": "de man, de vrouw, de tafel", "exampleHintKey": "grammar_rule_de_masc_fem_hint" },
-      { "ruleKey": "grammar_rule_het_neuter", "exampleDutch": "het huis, het boek, het meisje", "exampleHintKey": "grammar_rule_het_neuter_hint"  },
-      { "ruleKey": "grammar_rule_de_plural", "exampleDutch": "de mannen, de huizen, de boeken", "exampleHintKey": "grammar_rule_de_plural_hint" },
-      { "ruleKey": "grammar_rule_het_diminutives", "exampleDutch": "het tafeltje, het boekje, het mannetje", "exampleHintKey": "grammar_rule_het_diminutives_hint" },
-      { "ruleKey": "grammar_rule_het_languages_materials", "exampleDutch": "het Nederlands, het hout, het goud", "exampleHintKey": "grammar_rule_het_lang_mat_hint" },
-      { "ruleKey": "grammar_rule_het_infinitives_as_nouns", "exampleDutch": "het lezen, het schrijven", "exampleHintKey": "grammar_rule_het_infinitives_hint" }
-    ],
-    "commonMistakes": [
-      { "mistakeKey": "grammar_de_het_mistake_guessing", "correctionKey": "grammar_de_het_mistake_guessing_corr" }
-    ],
-    "notesKey": "grammar_de_het_notes_memorization"
-  },
-  {
     "id": "personal-pronouns",
+    "difficulty": "ui_difficulty_easy",
     "titleKey": "grammar_title_personal_pronouns",
     "explanationKey": "grammar_expl_personal_pronouns_intro",
     "tables": [
@@ -57,6 +41,7 @@
   },
   {
     "id": "present-tense-regular",
+    "difficulty": "ui_difficulty_easy",
     "titleKey": "grammar_title_present_tense_regular",
     "explanationKey": "grammar_expl_present_tense_regular_intro",
     "rules": [
@@ -72,5 +57,64 @@
         {"dutch": "Wij spelen elke zaterdag voetbal.", "englishHint": "We play football every Saturday. (spelen)"}
     ],
     "notesKey": "grammar_present_tense_notes_stam_t"
+  },
+  {
+    "id": "de-het-articles",
+    "difficulty": "ui_difficulty_medium",
+    "titleKey": "grammar_title_de_het",
+    "explanationKey": "grammar_expl_de_het_intro",
+    "rules": [
+      { "ruleKey": "grammar_rule_de_masc_fem", "exampleDutch": "de man, de vrouw, de tafel", "exampleHintKey": "grammar_rule_de_masc_fem_hint" },
+      { "ruleKey": "grammar_rule_het_neuter", "exampleDutch": "het huis, het boek, het meisje", "exampleHintKey": "grammar_rule_het_neuter_hint"  },
+      { "ruleKey": "grammar_rule_de_plural", "exampleDutch": "de mannen, de huizen, de boeken", "exampleHintKey": "grammar_rule_de_plural_hint" },
+      { "ruleKey": "grammar_rule_het_diminutives", "exampleDutch": "het tafeltje, het boekje, het mannetje", "exampleHintKey": "grammar_rule_het_diminutives_hint" },
+      { "ruleKey": "grammar_rule_het_languages_materials", "exampleDutch": "het Nederlands, het hout, het goud", "exampleHintKey": "grammar_rule_het_lang_mat_hint" },
+      { "ruleKey": "grammar_rule_het_infinitives_as_nouns", "exampleDutch": "het lezen, het schrijven", "exampleHintKey": "grammar_rule_het_infinitives_hint" }
+    ],
+    "commonMistakes": [
+      { "mistakeKey": "grammar_de_het_mistake_guessing", "correctionKey": "grammar_de_het_mistake_guessing_corr" }
+    ],
+    "notesKey": "grammar_de_het_notes_memorization"
+  },
+  {
+    "id": "adjective-agreement",
+    "difficulty": "ui_difficulty_medium",
+    "titleKey": "grammar_title_adjective_agreement",
+    "explanationKey": "grammar_expl_adjective_agreement_intro",
+    "rules": [
+        {"ruleKey": "grammar_rule_adj_de_word", "exampleDutch": "de grote man, de mooie vrouw", "exampleHintKey": "grammar_rule_adj_de_word_hint"},
+        {"ruleKey": "grammar_rule_adj_het_word_definite", "exampleDutch": "het grote huis, het mooie boek", "exampleHintKey": "grammar_rule_adj_het_word_definite_hint"},
+        {"ruleKey": "grammar_rule_adj_het_word_indefinite", "exampleDutch": "een groot huis, een mooi boek", "exampleHintKey": "grammar_rule_adj_het_word_indefinite_hint"},
+        {"ruleKey": "grammar_rule_adj_plural", "exampleDutch": "de grote mannen, de mooie huizen", "exampleHintKey": "grammar_rule_adj_plural_hint"},
+        {"ruleKey": "grammar_rule_adj_no_noun", "exampleDutch": "De rode is duur. Het blauwe is goedkoper.", "exampleHintKey": "grammar_rule_adj_no_noun_hint"}
+    ],
+    "commonMistakesKey": "grammar_adj_mistake_forgetting_e_het",
+    "notesKey": "grammar_adj_notes_uninflected"
+  },
+  {
+    "id": "word-order-main-clauses",
+    "difficulty": "ui_difficulty_hard",
+    "titleKey": "grammar_title_word_order_main_clauses",
+    "explanationKey": "grammar_expl_word_order_main_clauses_intro",
+    "rules": [
+        {"ruleKey": "grammar_rule_word_order_svo", "exampleDutch": "Ik lees een boek in de avond.", "exampleHintKey": "grammar_rule_word_order_svo_hint"},
+        {"ruleKey": "grammar_rule_word_order_inversion_question", "exampleDutch": "Lees jij een boek?", "exampleHintKey": "grammar_rule_word_order_inversion_question_hint"},
+        {"ruleKey": "grammar_rule_word_order_inversion_timeplace", "exampleDutch": "In de avond lees ik een boek.", "exampleHintKey": "grammar_rule_word_order_inversion_timeplace_hint"}
+    ],
+    "commonMistakesKey": "grammar_word_order_mistake_no_inversion",
+    "notesKey": "grammar_word_order_notes_verb_second"
+  },
+  {
+    "id": "perfect-tense-haben-zijn",
+    "difficulty": "ui_difficulty_hard",
+    "titleKey": "grammar_title_perfect_tense",
+    "explanationKey": "grammar_expl_perfect_tense_intro",
+    "rules": [
+        {"ruleKey": "grammar_rule_perfect_tense_hebben", "exampleDutch": "Ik heb gewerkt. Jij hebt gelezen.", "exampleHintKey": "grammar_rule_perfect_tense_hebben_hint"},
+        {"ruleKey": "grammar_rule_perfect_tense_zijn", "exampleDutch": "Ik ben gegaan. Zij is gebleven.", "exampleHintKey": "grammar_rule_perfect_tense_zijn_hint"},
+        {"ruleKey": "grammar_rule_perfect_tense_ge_prefix", "exampleDutch": "gewerkt, gespeeld, gemaakt", "exampleHintKey": "grammar_rule_perfect_tense_ge_prefix_hint"}
+    ],
+    "commonMistakesKey": "grammar_perfect_tense_mistake_wrong_auxiliary",
+    "notesKey": "grammar_perfect_tense_notes_intransitive_motion"
   }
 ]

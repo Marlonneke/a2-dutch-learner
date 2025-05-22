@@ -12,7 +12,7 @@ const LessonDetailPage = () => {
 
   useEffect(() => {
     setLoadingData(true);
-    fetch('/data/lessons_content.json') // Assuming your content file is named this
+    fetch('/data/lessons_content.json')
       .then(res => {
         if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
         return res.json();
@@ -22,7 +22,7 @@ const LessonDetailPage = () => {
         if (foundLesson) {
           setLesson(foundLesson);
         } else {
-          setError(t('ui_lesson_not_found') || 'Lesson not found');
+          setError(t('ui_lesson_not_found_error') || 'Lesson not found');
         }
         setLoadingData(false);
       })
@@ -31,12 +31,12 @@ const LessonDetailPage = () => {
         setError(err.message);
         setLoadingData(false);
       });
-  }, [lessonId, t]); // t added as it's used in setError for a translated message
+  }, [lessonId, t]);
 
   if (isLoadingTranslations && !lesson) return <p>{t('ui_loading') || 'Loading translations...'}</p>;
   if (loadingData) return <p>{t('ui_loading') || 'Loading lesson details...'}</p>;
   if (error) return <p>{t('ui_error_loading_data') || 'Error loading lesson'}: {error}</p>;
-  if (!lesson) return <p>{t('ui_lesson_not_found') || 'Lesson not found.'}</p>; // Should be caught by error state mostly
+  if (!lesson) return <p>{t('ui_lesson_not_found') || 'Lesson not found.'}</p>;
 
   return (
     <div className="detail-page lesson-detail">
@@ -96,6 +96,20 @@ const LessonDetailPage = () => {
             <p>{t(lesson.notesKey)}</p>
           </>
       )}
+
+      {/* VVVV NEW SECTION FOR TIPS VVVV */}
+      {lesson.tips && lesson.tips.length > 0 && (
+        <div className="lesson-tips-section" style={{ marginTop: '30px', borderTop: '1px solid #eee', paddingTop: '20px'}}>
+          <h3>{t('ui_cultural_tips_title') || 'Cultural & Learning Tips'}</h3>
+          <ul>
+            {lesson.tips.map((tip, index) => (
+              <li key={index} style={{ marginBottom: '10px' }}>{t(tip.tipKey) || 'Tip text unavailable.'}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+      {/* ^^^^ END OF NEW SECTION FOR TIPS ^^^^ */}
+
 
       <div style={{ marginTop: '30px' }}>
         <Link to={`/exercises?lesson=${lesson.id}`} className="button">
