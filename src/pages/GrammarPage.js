@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom'; // useNavigate
+import React, { useState, useEffect, useMemo } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from '../hooks/useTranslation';
 import AccordionItem from '../components/common/AccordionItem';
 
 const GrammarPage = () => {
   const { t, isLoadingTranslations } = useTranslation();
-  const navigate = useNavigate(); // Hook for programmatic navigation
+  const navigate = useNavigate();
   const [allGrammarTopics, setAllGrammarTopics] = useState([]);
-  const [grammarTopicsByDifficulty, setGrammarTopicsByDifficulty] = useState({});
   const [loadingData, setLoadingData] = useState(true);
   const [error, setError] = useState(null);
   const [activeAccordion, setActiveAccordion] = useState(null);
@@ -19,7 +18,7 @@ const GrammarPage = () => {
     fetch('/data/grammar_content.json')
       .then(response => {
         if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
+          throw new Error(`HTTP error! status: ${response.status} - Could not load grammar content.`);
         }
         return response.json();
       })
@@ -36,16 +35,20 @@ const GrammarPage = () => {
         setLoadingData(false);
       })
       .catch(err => {
-        console.error("Failed to load grammar content:", err);
+        console.error("Failed to load grammar_content.json:", err);
         setError(err.message);
         setLoadingData(false);
       });
   }, []);
 
-  useEffect(() => {
-    if (loadingData || isLoadingTranslations || allGrammarTopics.length === 0) return;
 
-    const grouped = allGrammarTopics.reduce((acc, topic) => {
+  const grammarTopicsByDifficulty = useMemo(() => {
+    if (loadingData || isLoadingTranslations || allGrammarTopics.length === 0) {
+      return {}; 
+    }
+    // console.log("[GrammarPage] Recalculating grouped grammar topics via useMemo."); // For debugging
+
+    return allGrammarTopics.reduce((acc, topic) => {
       const difficulty = topic.difficulty || 'ui_difficulty_medium';
       if (!acc[difficulty]) {
         acc[difficulty] = [];
@@ -53,8 +56,8 @@ const GrammarPage = () => {
       acc[difficulty].push(topic);
       return acc;
     }, {});
-    setGrammarTopicsByDifficulty(grouped);
   }, [allGrammarTopics, loadingData, isLoadingTranslations]);
+
 
   const toggleAccordion = (difficultyKey) => {
     setActiveAccordion(prevKey => (prevKey === difficultyKey ? null : difficultyKey));
@@ -64,23 +67,23 @@ const GrammarPage = () => {
     navigate(`/grammar/${topicId}`);
   };
 
-  if (isLoadingTranslations && allGrammarTopics.length === 0) return <p>{t('ui_loading') || 'Loading translations...'}</p>;
-  if (loadingData) return <p>{t('ui_loading') || 'Loading grammar topics...'}</p>;
-  if (error) return <p>{t('ui_error_loading_data') || 'Error loading grammar topics'}: {error}</p>;
+  if (isLoadingTranslations && allGrammarTopics.length === 0 && !error) return <p className="loading-message">{t('ui_loading') || 'Loading translations...'}</p>;
+  if (loadingData && !error) return <p className="loading-message">{t('ui_loading') || 'Loading grammar topics...'}</p>;
+  if (error) return <p className="error-message">{t('ui_error_loading_data') || 'Error loading grammar topics'}: {error}</p>;
   
   const hasAnyTopicsToShow = Object.values(grammarTopicsByDifficulty).some(group => group && group.length > 0);
 
   return (
     <div>
-      <h1>{t('ui_page_title_grammar') || 'Dutch Grammar A2'}</h1>
+      <h1 className="page-main-title">{t('ui_page_title_grammar') || 'Dutch Grammar A2'}</h1>
       <p>{t('ui_grammar_page_intro') || 'Explore various Dutch grammar topics, grouped by difficulty.'}</p>
 
       <div className="difficulty-groups-accordion">
         {difficultyOrder.map(difficultyKey => {
           const topicsInGroup = grammarTopicsByDifficulty[difficultyKey] || [];
-           if (topicsInGroup.length === 0 && allGrammarTopics.length > 0) {
-            return null;
-          }
+           if (topicsInGroup.length === 0 && allGrammarTopics.length > 0) { 
+             return null; 
+           }
 
           return (
             <AccordionItem
@@ -95,19 +98,20 @@ const GrammarPage = () => {
                   {topicsInGroup.map(topic => (
                     <div 
                       key={topic.id} 
-                      className="card enhanced-grammar-card clickable-card" // Added clickable-card
+                      className="card enhanced-grammar-card clickable-card"
                       onClick={() => handleCardClick(topic.id)}
                       role="link"
                       tabIndex={0}
                       onKeyPress={(e) => { if (e.key === 'Enter' || e.key === ' ') handleCardClick(topic.id); }}
                     >
-                      {/* No cover image for grammar topics assumed for now */}
+                      {/* Grammar cards typically don't have images, but you could add an icon or similar if desired */}
                       <div className="card-content">
                         <h3>{t(topic.titleKey) || topic.id}</h3>
                         <p className="card-snippet">
-                           {(t(topic.explanationKey) || 'Brief description...').substring(0,80) + '...'}
+                           {/* For grammar, 'shortDescriptionKey' might not be in your grammar_content.json */}
+                           {/* You might show a generic snippet or use explanationKey if it's short enough */}
+                           {(t(topic.shortDescriptionKey || topic.explanationKey) || 'View details...').substring(0,80) + '...'}
                         </p>
-                        {/* Button removed */}
                       </div>
                     </div>
                   ))}
@@ -120,7 +124,7 @@ const GrammarPage = () => {
         })}
       </div>
 
-       {!loadingData && !hasAnyTopicsToShow && (
+       {(!loadingData && !isLoadingTranslations && !hasAnyTopicsToShow && !error) && (
          <p className="no-items-message">{t('ui_no_grammar_topics_found') || 'No grammar topics found.'}</p>
       )}
     </div>

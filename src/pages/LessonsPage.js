@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react'; // Added useMemo
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from '../hooks/useTranslation';
 import AccordionItem from '../components/common/AccordionItem';
@@ -6,14 +6,15 @@ import AccordionItem from '../components/common/AccordionItem';
 const LessonsPage = () => {
   const { t, isLoadingTranslations } = useTranslation();
   const navigate = useNavigate();
-  const [lessonManifest, setLessonManifest] = useState([]); 
-  const [lessonsByDifficulty, setLessonsByDifficulty] = useState({});
+  const [lessonManifest, setLessonManifest] = useState([]); // Stores the fetched manifest
+  // lessonsByDifficulty will be derived using useMemo, no longer a separate state
   const [loadingData, setLoadingData] = useState(true);
   const [error, setError] = useState(null);
   const [activeAccordion, setActiveAccordion] = useState(null);
 
   const difficultyOrder = ['ui_difficulty_easy', 'ui_difficulty_medium', 'ui_difficulty_hard'];
 
+  // Effect for fetching the lesson manifest
   useEffect(() => {
     setLoadingData(true);
     fetch('/data/lessons_manifest.json') 
@@ -40,12 +41,17 @@ const LessonsPage = () => {
         setError(err.message);
         setLoadingData(false);
       });
-  }, []);
+  }, []); // Empty dependency array: runs once on mount
 
-  useEffect(() => {
-    if (loadingData || isLoadingTranslations || lessonManifest.length === 0) return;
 
-    const grouped = lessonManifest.reduce((acc, lessonSummary) => {
+  // Derive lessonsByDifficulty using useMemo
+  const lessonsByDifficulty = useMemo(() => {
+    if (loadingData || isLoadingTranslations || lessonManifest.length === 0) {
+      return {}; // Return empty if still loading or no manifest data
+    }
+    // console.log("[LessonsPage] Recalculating grouped lessons via useMemo."); // For debugging
+
+    return lessonManifest.reduce((acc, lessonSummary) => {
       const difficulty = lessonSummary.difficulty || 'ui_difficulty_medium';
       if (!acc[difficulty]) {
         acc[difficulty] = [];
@@ -53,8 +59,7 @@ const LessonsPage = () => {
       acc[difficulty].push(lessonSummary);
       return acc;
     }, {});
-    setLessonsByDifficulty(grouped);
-  }, [lessonManifest, loadingData, isLoadingTranslations]);
+  }, [lessonManifest, loadingData, isLoadingTranslations]); // Dependencies for useMemo
 
 
   const toggleAccordion = (difficultyKey) => {
@@ -65,15 +70,16 @@ const LessonsPage = () => {
     navigate(`/lessons/${lessonId}`);
   };
 
-  if (isLoadingTranslations && lessonManifest.length === 0) return <p>{t('ui_loading') || 'Loading translations...'}</p>;
-  if (loadingData) return <p>{t('ui_loading') || 'Loading lessons list...'}</p>;
-  if (error) return <p>{t('ui_error_loading_data') || 'Error loading lessons list'}: {error}</p>;
+  // Conditional rendering for loading/error states
+  if (isLoadingTranslations && lessonManifest.length === 0 && !error) return <p className="loading-message">{t('ui_loading') || 'Loading translations...'}</p>;
+  if (loadingData && !error) return <p className="loading-message">{t('ui_loading') || 'Loading lessons list...'}</p>;
+  if (error) return <p className="error-message">{t('ui_error_loading_data') || 'Error loading lessons list'}: {error}</p>;
 
   const hasAnyLessonsToShow = Object.values(lessonsByDifficulty).some(group => group && group.length > 0);
 
   return (
     <div>
-      <h1>{t('ui_page_title_lessons') || 'Dutch Lessons for A2'}</h1>
+      <h1 className="page-main-title">{t('ui_page_title_lessons') || 'Dutch Lessons for A2'}</h1>
       <p>{t('ui_lessons_page_intro') || 'Browse through our A2 level Dutch lessons, grouped by difficulty.'}</p>
 
       <div className="difficulty-groups-accordion">
@@ -124,7 +130,8 @@ const LessonsPage = () => {
         })}
       </div>
 
-      {!loadingData && !hasAnyLessonsToShow && (
+      {/* Message if no lessons found AT ALL after loading and no error */}
+      {(!loadingData && !isLoadingTranslations && !hasAnyLessonsToShow && !error) && (
          <p className="no-items-message">{t('ui_no_lessons_found') || 'No lessons found.'}</p>
       )}
     </div>

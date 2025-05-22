@@ -113,22 +113,21 @@ const LessonDetailPage = () => {
       )}
 
       {lesson.tips && lesson.tips.length > 0 && (
-        <div className="lesson-tips-section" style={{ marginTop: '30px', borderTop: '1px solid #eee', paddingTop: '20px'}}>
+        <div className="lesson-tips-section">
           <h3>{t('ui_cultural_tips_title') || 'Cultural & Learning Tips'}</h3>
           <ul>
             {lesson.tips.map((tip, index) => (
-              <li key={index} style={{ marginBottom: '10px' }}>{t(tip.tipKey) || 'Tip text unavailable.'}</li>
+              <li key={index} className="lesson-tip-item">{t(tip.tipKey) || 'Tip text unavailable.'}</li>
             ))}
           </ul>
         </div>
       )}
 
-      <div style={{ marginTop: '30px' }}>
-        {/* Link to exercises might still use logical lesson.id if exercises.json filters by it */}
+     <div className="page-actions"> 
         <Link to={`/exercises?lesson=${lesson.id}`} className="button">
           {t('ui_practice_this_lesson_button') || 'Practice this Lesson'}
         </Link>
-        <Link to="/lessons" style={{ marginLeft: '15px' }}>
+        <Link to="/lessons" className="button secondary back-button"> 
           {t('ui_back_to_lessons_list_button') || 'Back to Lessons'}
         </Link>
       </div>
