@@ -1,18 +1,16 @@
 import React from 'react';
-import { useTranslation } from '../../hooks/useTranslation'; // Assuming this hook exists
-// import styles from './Footer.module.css'; // Optional: for Footer specific styles
+import { useTranslation } from '../../hooks/useTranslation';
+// import styles from './Footer.module.css';
 
 const Footer = () => {
-  const { t } = useTranslation(); // For translating footer text
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="site-footer"> {/* Referencing class from App.css */}
+    <footer className="site-footer">
       <p>
-        © {currentYear} {t('footer_text') ? t('footer_text') : 'A2 Dutch Learner. All rights reserved.'}
-        {/* Add 'footer_text' to translations.json */}
+        © {currentYear} {t('ui_footer_text') || 'A2 Dutch Learner. All rights reserved.'}
       </p>
-      {/* You can add more links or info here */}
     </footer>
   );
 };

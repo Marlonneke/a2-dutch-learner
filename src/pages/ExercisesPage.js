@@ -1,23 +1,39 @@
 import React from 'react';
-import { useTranslation } from '../hooks/useTranslation'; // Assuming this hook exists and is needed
+import { useTranslation } from '../hooks/useTranslation';
+// Future imports: useState, useEffect, useSearchParams from react-router-dom
 
 const ExercisesPage = () => {
-  const { t } = useTranslation(); // For translatable page titles or text
+  const { t } = useTranslation();
+  // const [exercises, setExercises] = useState([]);
+  // const [currentExercise, setCurrentExercise] = useState(null);
+  // const [loading, setLoading] = useState(true);
+  // const [searchParams] = useSearchParams();
 
-  // Placeholder content - you will build this out later
-  // For now, let's just show that the page is loaded
+  // useEffect(() => {
+  //   const lessonFilter = searchParams.get('lesson');
+  //   const grammarFilter = searchParams.get('grammar');
+  //   // Fetch /data/exercises_content.json
+  //   // Filter exercises based on lessonFilter or grammarFilter
+  //   // Set a random exercise to currentExercise
+  // }, [searchParams]);
+
 
   return (
     <div>
-      <h1>{t('page_title_exercises') ? t('page_title_exercises') : 'Practice Exercises'}</h1>
-      <p>{t('exercises_coming_soon') ? t('exercises_coming_soon') : 'Exercises will be available here soon!'}</p>
+      <h1>{t('ui_page_title_exercises') || 'Practice Exercises'}</h1>
+      <p>{t('exercise_exercises_coming_soon_message') || 'Exercises will be available here soon!'}</p>
       {/*
-        Future content:
-        - Logic to fetch exercises.json
-        - Filter exercises based on lessonId or grammarId (from URL query params)
-        - Select random exercises
-        - Render different exercise types (multiple-choice, fill-in-the-blank)
-        - Check answers and provide feedback
+        Placeholder for where the exercise runner will go
+        <div className="exercise-container">
+          {currentExercise ? (
+            <>
+              <p className="exercise-question">{currentExercise.question}</p>
+              // Logic to render MC, FillBlank, etc. based on currentExercise.type
+            </>
+          ) : (
+            <p>{t('exercise_select_topic_prompt') || 'Select a topic or try random exercises.'}</p>
+          )}
+        </div>
       */}
     </div>
   );

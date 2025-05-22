@@ -1,42 +1,42 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import LanguageToggle from '../LanguageToggle/LanguageToggle'; // Adjust path if needed
-import { useTranslation } from '../../hooks/useTranslation'; // Assuming this hook exists
-// import styles from './Header.module.css'; // Optional: for Header specific styles
+import LanguageToggle from '../LanguageToggle/LanguageToggle';
+import { useTranslation } from '../../hooks/useTranslation';
+// import styles from './Header.module.css';
 
 const Header = () => {
-  const { t } = useTranslation(); // For translating navigation links
+  const { t } = useTranslation();
 
   return (
-    <header className="site-header"> {/* Referencing class from App.css */}
+    <header className="site-header">
       <div className="logo">
-        <Link to="/">{t('app_title') ? t('app_title') : 'A2 Dutch Learner'}</Link> {/* Add 'app_title' to translations.json */}
+        <Link to="/">{t('ui_app_title') || 'A2 Dutch Learner'}</Link>
       </div>
       <nav className="site-nav">
         <ul>
           <li>
             <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>
-              {t('nav_home')}
+              {t('ui_nav_home')}
             </NavLink>
           </li>
           <li>
             <NavLink to="/lessons" className={({ isActive }) => isActive ? "active" : ""}>
-              {t('nav_lessons')}
+              {t('ui_nav_lessons')}
             </NavLink>
           </li>
           <li>
             <NavLink to="/grammar" className={({ isActive }) => isActive ? "active" : ""}>
-              {t('nav_grammar')}
+              {t('ui_nav_grammar')}
             </NavLink>
           </li>
           <li>
             <NavLink to="/exercises" className={({ isActive }) => isActive ? "active" : ""}>
-              {t('nav_exercises')}
+              {t('ui_nav_exercises')}
             </NavLink>
           </li>
         </ul>
       </nav>
-      <div className="language-toggle-container"> {/* Optional: for styling wrapper if needed */}
+      <div className="language-toggle-container">
         <LanguageToggle />
       </div>
     </header>

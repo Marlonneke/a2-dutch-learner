@@ -1,72 +1,125 @@
+// src/contexts/LanguageContext.js
 import React, { createContext, useState, useEffect, useCallback } from 'react';
 
 export const LanguageContext = createContext();
 
-const translationFiles = ['ui', 'lessons', 'grammar', 'exercises']; // Define your namespaces
+const translationFiles = ['ui', 'lessons', 'grammar', 'exercises'];
 
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState('en');
-  const [translations, setTranslations] = useState({}); // This will hold all loaded translations by language
+  const [translations, setTranslations] = useState({});
   const [isLoadingTranslations, setIsLoadingTranslations] = useState(true);
+  const [loadError, setLoadError] = useState(null);
 
   const loadTranslationsForLang = useCallback(async (lang) => {
+    console.log(`[LanguageContext] Attempting to load translations for: ${lang}`);
     setIsLoadingTranslations(true);
+    setLoadError(null);
+    let successfullyLoadedSomething = false;
+    const loadedLangTranslations = {};
+
     try {
-      const loadedLangTranslations = {};
       for (const file of translationFiles) {
-        const response = await fetch(`/data/translations/${lang}/${file}.json`);
+        const filePath = `/data/translations/${lang}/${file}.json`;
+        console.log(`[LanguageContext] Fetching: ${filePath}`);
+        const response = await fetch(filePath);
+
         if (!response.ok) {
-          console.warn(`Could not load ${file}.json for language ${lang}`);
-          continue; // Skip this file or handle error more gracefully
+          console.warn(`[LanguageContext] Could not load ${file}.json for lang ${lang}. Status: ${response.status}, URL: ${response.url}`);
+          if (!loadError) setLoadError(`Failed to load ${file}.json (Status: ${response.status})`);
+          continue;
         }
-        const data = await response.json();
-        Object.assign(loadedLangTranslations, data); // Merge translations from this file
+
+        const text = await response.text();
+        try {
+          const data = JSON.parse(text);
+          Object.assign(loadedLangTranslations, data);
+          console.log(`[LanguageContext] Successfully loaded and parsed: ${file}.json for ${lang}`);
+          successfullyLoadedSomething = true;
+        } catch (parseError) {
+          console.error(`[LanguageContext] Error parsing ${file}.json for ${lang}:`, parseError);
+          console.error(`[LanguageContext] Raw text received for ${file}.json:`, text.substring(0, 500) + "...");
+          if (!loadError) setLoadError(`Failed to parse ${file}.json`);
+        }
       }
-      setTranslations(prev => ({ ...prev, [lang]: loadedLangTranslations }));
+
+      if (successfullyLoadedSomething && Object.keys(loadedLangTranslations).length > 0) {
+        setTranslations(prev => ({ ...prev, [lang]: loadedLangTranslations }));
+        console.log(`[LanguageContext] All translations stored for ${lang}.`);
+      } else if (!loadError && !successfullyLoadedSomething) {
+        console.warn(`[LanguageContext] No new translations were loaded for ${lang}, and no specific fetch/parse error was set for this attempt.`);
+        // Avoid setting a generic error if individual file load errors were already set.
+      }
+
     } catch (error) {
-      console.error("Error loading translations:", error);
+      console.error("[LanguageContext] General error in loadTranslationsForLang:", error);
+      setLoadError("A general network error occurred while loading translations.");
     } finally {
       setIsLoadingTranslations(false);
+      console.log(`[LanguageContext] Finished loading attempt for ${lang}. isLoading: false. Error state: ${loadError}`);
     }
-  }, []);
+  }, [loadError]); // Only re-create this function if loadError changes (for retries)
 
   useEffect(() => {
-    // Load initial language
-    if (!translations[language]) { // Only load if not already loaded
-        loadTranslationsForLang(language);
+    // Only load if translations for the current language are not present or empty
+    if (!translations[language] || Object.keys(translations[language]).length === 0) {
+      loadTranslationsForLang(language);
+    } else {
+        // Translations already exist, ensure loading state is false if it was true.
+        if (isLoadingTranslations) setIsLoadingTranslations(false);
     }
-  }, [language, loadTranslationsForLang, translations]);
+  }, [language, loadTranslationsForLang, translations, isLoadingTranslations]);
 
-  // Function to switch language and load if necessary
+
   const switchLanguage = useCallback((newLang) => {
-    setLanguage(newLang);
-    if (!translations[newLang]) {
-        loadTranslationsForLang(newLang);
+    if (language !== newLang) {
+        console.log(`[LanguageContext] Switching language from ${language} to ${newLang}`);
+        setTranslations(prev => ({...prev, [newLang]: prev[newLang] || {}})); // Ensure new lang obj exists
+        setLanguage(newLang);
+        // useEffect above will handle loading if newLang's translations aren't populated
     }
-  }, [loadTranslationsForLang, translations]);
+  }, [language]);
 
   const t = useCallback((key) => {
-    if (isLoadingTranslations) {
-        // Optionally return a loading string or the key itself
-        return `loading_key_${key}...`;
-    }
-    if (translations[language] && translations[language][key]) {
-      return translations[language][key];
-    }
-    console.warn(`Translation key "${key}" not found for language "${language}"`);
-    return key; // Fallback
-  }, [language, translations, isLoadingTranslations]);
+    const currentLangTranslations = translations[language] || {};
 
-  if (isLoadingTranslations && !translations[language]) {
-      return <div>Loading application translations...</div>; // Or a global spinner
+    if (isLoadingTranslations && Object.keys(currentLangTranslations).length === 0) {
+        return `loading_${key}...`;
+    }
+    if (loadError && Object.keys(currentLangTranslations).length === 0 ) {
+        return `err_loading_${key}`;
+    }
+
+    if (currentLangTranslations[key] !== undefined) {
+      return currentLangTranslations[key];
+    }
+    console.warn(`[LanguageContext] Translation key "${key}" not found for language "${language}"`);
+    return key;
+  }, [language, translations, isLoadingTranslations, loadError]);
+
+
+  if (loadError && (!translations[language] || Object.keys(translations[language] || {}).length === 0)) {
+      return (
+        <div style={{ padding: '20px', backgroundColor: 'lightcoral', color: 'black', border: '2px solid red', position: 'fixed', top: 0, left: 0, width: '100%', zIndex: 9999 }}>
+            <h2>Translation Loading Error</h2>
+            <p>Could not load translation files for language: '{language}'. Console has details.</p>
+            <p>Error: {loadError}</p>
+            <button onClick={() => { setLoadError(null); setIsLoadingTranslations(true); loadTranslationsForLang(language);}}>Retry Loading Translations</button>
+        </div>
+      );
+  }
+
+  if (isLoadingTranslations && (!translations[language] || Object.keys(translations[language] || {}).length === 0) && !loadError) {
+      return <div style={{ padding: '20px', textAlign: 'center'}}>Loading application translations for '{language}'...</div>;
   }
 
   return (
     <LanguageContext.Provider value={{
       language,
-      setLanguage: switchLanguage, // Use the new switchLanguage function
+      setLanguage: switchLanguage,
       t,
-      isLoadingTranslations
+      isLoadingTranslations,
+      loadError
     }}>
       {children}
     </LanguageContext.Provider>
