@@ -2,7 +2,6 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import LanguageToggle from '../LanguageToggle/LanguageToggle';
 import { useTranslation } from '../../hooks/useTranslation';
-// import styles from './Header.module.css';
 
 const Header = () => {
   const { t } = useTranslation();

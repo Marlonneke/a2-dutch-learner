@@ -40,17 +40,20 @@
   "ui_mistake_label": "Mistake",
   "ui_correction_label": "Correction/Note",
   "ui_footer_text": "Your A2 Dutch Learning Companion",
-  "ui_Klant": "Customer",
-  "ui_Bakker": "Baker",
   "ui_PersoonA": "Person A",
   "ui_PersoonB": "Person B",
   "ui_Toerist": "Tourist",
   "ui_Inwoner": "Resident",
+  "ui_Klant": "Customer",
+  "ui_Bakker": "Baker",
   "lesson_theme_label": "Theme",
   "ui_difficulty_easy": "Easy",
   "ui_difficulty_medium": "Medium",
   "ui_difficulty_hard": "Hard",
   "ui_lessons_by_difficulty_title": "Lessons by Difficulty",
   "ui_grammar_by_difficulty_title": "Grammar by Difficulty",
-  "ui_cultural_tips_title": "Cultural & Learning Tips" 
+  "ui_cultural_tips_title": "Cultural & Learning Tips",
+  "ui_no_lessons_match_filter": "No lessons match your current filters.",
+  "ui_no_lessons_found_in_difficulty": "No lessons currently in this difficulty level.",
+  "ui_no_grammar_topics_in_difficulty": "No grammar topics currently in this difficulty level."
 }

@@ -4,6 +4,7 @@
     "difficulty": "ui_difficulty_easy",
     "themeKey": "lesson_theme_greetings",
     "titleKey": "lesson_title_greetings_full",
+    "coverImage": "/images/lessons/handshake.jpg",
     "explanationKey": "lesson_expl_greetings_full",
     "vocabulary": [
       { "dutch": "Hallo", "definitionKey": "lesson_vocab_hello_def" },
@@ -26,6 +27,7 @@
     "difficulty": "ui_difficulty_easy",
     "themeKey": "lesson_theme_numbers",
     "titleKey": "lesson_title_numbers_0_20",
+    "coverImage": "/images/lessons/numbers.jpg",
     "explanationKey": "lesson_expl_numbers_0_20",
     "vocabulary": [
       { "dutch": "nul", "definitionKey": "lesson_vocab_zero_def"},
@@ -48,6 +50,7 @@
     "difficulty": "ui_difficulty_easy",
     "themeKey": "lesson_theme_colors",
     "titleKey": "lesson_title_colors_basic",
+    "coverImage": "/images/lessons/colors.jpg",
     "explanationKey": "lesson_expl_colors_basic",
     "vocabulary": [
         {"dutch": "rood", "definitionKey": "lesson_vocab_red_def"},
@@ -71,6 +74,7 @@
     "difficulty": "ui_difficulty_easy",
     "themeKey": "lesson_theme_time_date",
     "titleKey": "lesson_title_days_week",
+    "coverImage": "/images/lessons/dagen.jpg",
     "explanationKey": "lesson_expl_days_week",
     "vocabulary": [
         {"dutch": "maandag", "definitionKey": "lesson_vocab_monday_def"},
@@ -99,6 +103,7 @@
     "difficulty": "ui_difficulty_easy",
     "themeKey": "lesson_theme_family",
     "titleKey": "lesson_title_family_basic",
+    "coverImage": "/images/lessons/familie.jpg",
     "explanationKey": "lesson_expl_family_basic",
     "vocabulary": [
         {"dutch": "de moeder", "definitionKey": "lesson_vocab_mother_def"},
@@ -121,6 +126,7 @@
     "difficulty": "ui_difficulty_easy",
     "themeKey": "lesson_theme_food",
     "titleKey": "lesson_title_food_drinks_common",
+    "coverImage": "/images/lessons/etenendrinken.jpg",
     "explanationKey": "lesson_expl_food_drinks_common",
     "vocabulary": [
         {"dutch": "het brood", "definitionKey": "lesson_vocab_bread_def"},
@@ -145,6 +151,7 @@
     "difficulty": "ui_difficulty_easy",
     "themeKey": "lesson_theme_questions",
     "titleKey": "lesson_title_simple_questions_www",
+    "coverImage": "/images/lessons/wiewatwaar.jpg",
     "explanationKey": "lesson_expl_simple_questions_www",
     "vocabulary": [
         {"dutch": "Wie?", "definitionKey": "lesson_vocab_who_def"},
@@ -167,6 +174,7 @@
     "difficulty": "ui_difficulty_easy",
     "themeKey": "lesson_theme_verbs",
     "titleKey": "lesson_title_verb_hebben",
+    "coverImage": "/images/lessons/hebben.jpg",
     "explanationKey": "lesson_expl_verb_hebben",
     "vocabulary": [
         {"dutch": "ik heb", "definitionKey": "lesson_vocab_ihave_def"},
@@ -187,6 +195,7 @@
     "difficulty": "ui_difficulty_easy",
     "themeKey": "lesson_theme_verbs",
     "titleKey": "lesson_title_verb_zijn",
+    "coverImage": "/images/lessons/zijn.jpg",
     "explanationKey": "lesson_expl_verb_zijn",
     "vocabulary": [
         {"dutch": "ik ben", "definitionKey": "lesson_vocab_iam_def"},
@@ -207,6 +216,7 @@
     "difficulty": "ui_difficulty_easy",
     "themeKey": "lesson_theme_grammar_basics",
     "titleKey": "lesson_title_article_een",
+    "coverImage": "/images/lessons/een.jpg",
     "explanationKey": "lesson_expl_article_een",
     "vocabulary": [
         {"dutch": "een", "definitionKey": "lesson_vocab_a_an_def"}
@@ -226,15 +236,22 @@
     "difficulty": "ui_difficulty_medium",
     "themeKey": "lesson_theme_travel",
     "titleKey": "lesson_title_directions",
+    "coverImage": "/images/lessons/een.jpg",
     "explanationKey": "lesson_expl_directions",
     "vocabulary": [
         {"dutch": "linksaf", "definitionKey": "lesson_vocab_turnleft_def"},
         {"dutch": "rechtsaf", "definitionKey": "lesson_vocab_turnright_def"},
         {"dutch": "rechtdoor", "definitionKey": "lesson_vocab_straighton_def"},
-        {"dutch": "het kruispunt", "definitionKey": "lesson_vocab_crossroads_def"}
+        {"dutch": "het kruispunt", "definitionKey": "lesson_vocab_crossroads_def"},
+        {"dutch": "Waar is...?", "definitionKey": "lesson_vocab_whereis_def"},
+        {"dutch": "Hoe kom ik bij...?", "definitionKey": "lesson_vocab_howtogetto_def"},
+        {"dutch": "de straat", "definitionKey": "lesson_vocab_street_def"},
+        {"dutch": "de hoek", "definitionKey": "lesson_vocab_corner_def"},
+        {"dutch": "het station", "definitionKey": "lesson_vocab_station_def"}
     ],
     "exampleSentences": [
-        {"dutch": "Ga bij het kruispunt linksaf.", "englishHint": "Turn left at the crossroads."}
+        {"dutch": "Ga bij het kruispunt linksaf.", "englishHint": "Turn left at the crossroads."},
+        {"dutch": "Het museum is om de hoek.", "englishHint": "The museum is around the corner."}
     ],
     "tips": [
       { "tipKey": "lesson_tip_directions_landmarks_text" },
@@ -251,16 +268,24 @@
     "vocabulary": [
       {"dutch": "de menukaart", "definitionKey": "lesson_vocab_menu_def"},
       {"dutch": "Ik wil graag bestellen.", "definitionKey": "lesson_vocab_iwanttoorder_def"},
-      {"dutch": "de rekening", "definitionKey": "lesson_vocab_bill_def"}
+      {"dutch": "Wat kunt u aanbevelen?", "definitionKey": "lesson_vocab_whatrecommend_def"},
+      {"dutch": "Als voorgerecht neem ik...", "definitionKey": "lesson_vocab_forstarter_def"},
+      {"dutch": "Als hoofdgerecht wil ik...", "definitionKey": "lesson_vocab_formain_def"},
+      {"dutch": "En als nagerecht...", "definitionKey": "lesson_vocab_fordessert_def"},
+      {"dutch": "Mag ik de rekening, alstublieft?", "definitionKey": "lesson_vocab_canihavethebill_def"},
+      {"dutch": "de rekening", "definitionKey": "lesson_vocab_bill_def"},
+      {"dutch": "lekker / heerlijk", "definitionKey": "lesson_vocab_tasty_def"}
     ],
     "exampleSentences": [
-      {"dutch": "Ober, mogen wij de menukaart alstublieft?", "englishHint": "Waiter, may we have the menu please?"}
+      {"dutch": "Ober, mogen wij de menukaart alstublieft?", "englishHint": "Waiter, may we have the menu please?"},
+      {"dutch": "Ik neem de tomatensoep en daarna de biefstuk.", "englishHint": "I'll have the tomato soup and then the steak."}
     ],
     "tips": [
       { "tipKey": "lesson_tip_restaurant_service_text" },
       { "tipKey": "lesson_tip_restaurant_tipping_text" },
       { "tipKey": "lesson_tip_restaurant_reservation_text" }
-    ]
+    ],
+    "notesKey": "lesson_ordering_notes_politeness"
   },
   {
     "id": "numbers-100-1000",
@@ -271,10 +296,12 @@
     "vocabulary": [
       {"dutch": "honderdeen (101)", "definitionKey": "lesson_vocab_101_def"},
       {"dutch": "tweehonderd (200)", "definitionKey": "lesson_vocab_200_def"},
+      {"dutch": "vijfhonderdvijftig (550)", "definitionKey": "lesson_vocab_550_def"},
       {"dutch": "duizend (1000)", "definitionKey": "lesson_vocab_1000_def"}
     ],
     "exampleSentences": [
-        {"dutch": "Dit horloge kost driehonderdvijfennegentig euro.", "englishHint": "This watch costs three hundred ninety-five euros."}
+        {"dutch": "Dit horloge kost driehonderdvijfennegentig euro.", "englishHint": "This watch costs three hundred ninety-five euros."},
+        {"dutch": "Er wonen meer dan duizend mensen in dit dorp.", "englishHint": "More than a thousand people live in this village." }
     ],
     "tips": [
       { "tipKey": "lesson_tip_numbers_large_clarity_text" },
@@ -293,11 +320,13 @@
         {"dutch": "Het is ... uur.", "definitionKey": "lesson_vocab_itis_oclock_def"},
         {"dutch": "kwart voor", "definitionKey": "lesson_vocab_quarterto_def"},
         {"dutch": "kwart over", "definitionKey": "lesson_vocab_quarterpast_def"},
-        {"dutch": "half", "definitionKey": "lesson_vocab_half_def"}
+        {"dutch": "half", "definitionKey": "lesson_vocab_half_def"},
+        {"dutch": "over (minuten)", "definitionKey": "lesson_vocab_minutespast_def"},
+        {"dutch": "voor (minuten)", "definitionKey": "lesson_vocab_minutesto_def"}
     ],
     "exampleSentences": [
         {"dutch": "Het is half drie.", "englishHint": "It is half past two (2:30)."},
-        {"dutch": "De trein vertrekt om kwart over vier.", "englishHint": "The train departs at a quarter past four (4:15)."}
+        {"dutch": "De trein vertrekt om kwart over vier. (officieel: zestien uur vijftien)", "englishHint": "The train departs at a quarter past four (4:15 PM). (officially: sixteen fifteen hours)"}
     ],
     "tips": [
       { "tipKey": "lesson_tip_time_24hour_text" },
@@ -315,12 +344,15 @@
         {"dutch": "de broek", "definitionKey": "lesson_vocab_trousers_def"},
         {"dutch": "het hemd / de blouse", "definitionKey": "lesson_vocab_shirt_blouse_def"},
         {"dutch": "de jurk", "definitionKey": "lesson_vocab_dress_def"},
+        {"dutch": "de schoenen", "definitionKey": "lesson_vocab_shoes_def"},
         {"dutch": "passen", "definitionKey": "lesson_vocab_tryon_def"},
-        {"dutch": "de maat", "definitionKey": "lesson_vocab_size_def"}
+        {"dutch": "de maat", "definitionKey": "lesson_vocab_size_def"},
+        {"dutch": "de paskamer", "definitionKey": "lesson_vocab_fittingroom_def"},
+        {"dutch": "de korting", "definitionKey": "lesson_vocab_discount_def"}
     ],
     "exampleSentences": [
         {"dutch": "Ik zoek een blauwe broek in maat 38.", "englishHint": "I'm looking for blue trousers in size 38."},
-        {"dutch": "Mag ik deze jurk passen?", "englishHint": "May I try on this dress?"}
+        {"dutch": "Mag ik deze jurk passen in de paskamer?", "englishHint": "May I try on this dress in the fitting room?"}
     ],
     "tips": [
       { "tipKey": "lesson_tip_shopping_sales_text" },
@@ -339,10 +371,13 @@
         {"dutch": "Kan ik een afspraak maken?", "definitionKey": "lesson_vocab_canimakeappointment_def"},
         {"dutch": "Wanneer schikt het u?", "definitionKey": "lesson_vocab_whensuitsyou_def"},
         {"dutch": "de tandarts", "definitionKey": "lesson_vocab_dentist_def"},
-        {"dutch": "de dokter", "definitionKey": "lesson_vocab_doctor_def"}
+        {"dutch": "de dokter / huisarts", "definitionKey": "lesson_vocab_doctor_def"},
+        {"dutch": "de kapper", "definitionKey": "lesson_vocab_hairdresser_def"},
+        {"dutch": "verzetten", "definitionKey": "lesson_vocab_reschedule_def"},
+        {"dutch": "annuleren", "definitionKey": "lesson_vocab_cancel_def"}
     ],
     "exampleSentences": [
-        {"dutch": "Ik wil graag een afspraak maken bij de kapper.", "englishHint": "I would like to make an appointment at the hairdresser's."}
+        {"dutch": "Ik wil graag een afspraak maken bij de kapper voor volgende week dinsdag.", "englishHint": "I would like to make an appointment at the hairdresser's for next Tuesday."}
     ],
     "tips": [
       { "tipKey": "lesson_tip_appointments_formal_text" },
@@ -361,11 +396,13 @@
         {"dutch": "ontbijten", "definitionKey": "lesson_vocab_havebreakfast_def"},
         {"dutch": "naar het werk/school gaan", "definitionKey": "lesson_vocab_gotoworkschool_def"},
         {"dutch": "lunchen", "definitionKey": "lesson_vocab_havelunch_def"},
-        {"dutch": "avondeten", "definitionKey": "lesson_vocab_havedinner_def"},
+        {"dutch": "avondeten / dineren", "definitionKey": "lesson_vocab_havedinner_def"},
+        {"dutch": "studeren / huiswerk maken", "definitionKey": "lesson_vocab_study_homework_def"},
+        {"dutch": "tv kijken", "definitionKey": "lesson_vocab_watchtv_def"},
         {"dutch": "slapen gaan", "definitionKey": "lesson_vocab_gotosleep_def"}
     ],
     "exampleSentences": [
-        {"dutch": "Ik sta elke dag om zeven uur op.", "englishHint": "I get up at seven o'clock every day."}
+        {"dutch": "Ik sta elke dag om zeven uur op, dan ontbijt ik.", "englishHint": "I get up at seven o'clock every day, then I have breakfast."}
     ],
     "tips": [
       { "tipKey": "lesson_tip_routine_worklife_text" },
@@ -383,11 +420,16 @@
         {"dutch": "de trein", "definitionKey": "lesson_vocab_train_def"},
         {"dutch": "de bus", "definitionKey": "lesson_vocab_bus_def"},
         {"dutch": "de tram", "definitionKey": "lesson_vocab_tram_def"},
+        {"dutch": "de metro", "definitionKey": "lesson_vocab_metro_def"},
         {"dutch": "het kaartje", "definitionKey": "lesson_vocab_ticket_def"},
-        {"dutch": "de OV-chipkaart", "definitionKey": "lesson_vocab_ovchipcard_def"}
+        {"dutch": "de OV-chipkaart", "definitionKey": "lesson_vocab_ovchipcard_def"},
+        {"dutch": "inchecken", "definitionKey": "lesson_vocab_checkin_def"},
+        {"dutch": "uitchecken", "definitionKey": "lesson_vocab_checkout_def"},
+        {"dutch": "het perron", "definitionKey": "lesson_vocab_platform_def"}
     ],
     "exampleSentences": [
-        {"dutch": "Ik neem de trein naar Amsterdam.", "englishHint": "I'm taking the train to Amsterdam."}
+        {"dutch": "Ik neem de trein naar Amsterdam vanaf perron 5.", "englishHint": "I'm taking the train to Amsterdam from platform 5."},
+        {"dutch": "Vergeet niet uit te checken met je OV-chipkaart!", "englishHint": "Don't forget to check out with your OV-chipkaart!"}
     ],
     "tips": [
       { "tipKey": "lesson_tip_transport_ovchip_text" },
@@ -406,10 +448,13 @@
         {"dutch": "wandelen", "definitionKey": "lesson_vocab_walking_def"},
         {"dutch": "fietsen", "definitionKey": "lesson_vocab_cycling_def"},
         {"dutch": "sporten", "definitionKey": "lesson_vocab_sports_def"},
-        {"dutch": "muziek luisteren", "definitionKey": "lesson_vocab_listenmusic_def"}
+        {"dutch": "koken", "definitionKey": "lesson_vocab_cooking_def"},
+        {"dutch": "tuinieren", "definitionKey": "lesson_vocab_gardening_def"},
+        {"dutch": "muziek luisteren", "definitionKey": "lesson_vocab_listenmusic_def"},
+        {"dutch": "films kijken", "definitionKey": "lesson_vocab_watchfilms_def"}
     ],
     "exampleSentences": [
-        {"dutch": "In mijn vrije tijd lees ik graag boeken.", "englishHint": "In my free time, I like to read books."}
+        {"dutch": "In mijn vrije tijd lees ik graag boeken en ik houd van tuinieren.", "englishHint": "In my free time, I like to read books and I love gardening."}
     ],
     "tips": [
       { "tipKey": "lesson_tip_hobbies_verenigingen_text" },
@@ -426,13 +471,24 @@
     "vocabulary": [
         {"dutch": "januari", "definitionKey": "lesson_vocab_january_def"},
         {"dutch": "februari", "definitionKey": "lesson_vocab_february_def"},
+        {"dutch": "maart", "definitionKey": "lesson_vocab_march_def"},
+        {"dutch": "april", "definitionKey": "lesson_vocab_april_def"},
+        {"dutch": "mei", "definitionKey": "lesson_vocab_may_def"},
+        {"dutch": "juni", "definitionKey": "lesson_vocab_june_def"},
+        {"dutch": "juli", "definitionKey": "lesson_vocab_july_def"},
+        {"dutch": "augustus", "definitionKey": "lesson_vocab_august_def"},
+        {"dutch": "september", "definitionKey": "lesson_vocab_september_def"},
+        {"dutch": "oktober", "definitionKey": "lesson_vocab_october_def"},
+        {"dutch": "november", "definitionKey": "lesson_vocab_november_def"},
+        {"dutch": "december", "definitionKey": "lesson_vocab_december_def"},
         {"dutch": "de lente", "definitionKey": "lesson_vocab_spring_def"},
         {"dutch": "de zomer", "definitionKey": "lesson_vocab_summer_def"},
         {"dutch": "de herfst", "definitionKey": "lesson_vocab_autumn_def"},
         {"dutch": "de winter", "definitionKey": "lesson_vocab_winter_def"}
     ],
     "exampleSentences": [
-        {"dutch": "Mijn verjaardag is in juli.", "englishHint": "My birthday is in July."}
+        {"dutch": "Mijn verjaardag is in juli, in de zomer.", "englishHint": "My birthday is in July, in the summer."},
+        {"dutch": "In de herfst vallen de bladeren van de bomen.", "englishHint": "In autumn, the leaves fall from the trees." }
     ],
     "tips": [
       { "tipKey": "lesson_tip_seasons_weather_text" },
@@ -450,11 +506,14 @@
         {"dutch": "Ik vind...", "definitionKey": "lesson_vocab_ifind_def"},
         {"dutch": "Ik denk dat...", "definitionKey": "lesson_vocab_ithinkthat_def"},
         {"dutch": "Volgens mij...", "definitionKey": "lesson_vocab_inmyopinion_def"},
-        {"dutch": "eens zijn met", "definitionKey": "lesson_vocab_agree_def"},
-        {"dutch": "oneens zijn met", "definitionKey": "lesson_vocab_disagree_def"}
+        {"dutch": "Mee eens zijn", "definitionKey": "lesson_vocab_agree_def"},
+        {"dutch": "Niet mee eens zijn", "definitionKey": "lesson_vocab_disagree_def"},
+        {"dutch": "Misschien", "definitionKey": "lesson_vocab_perhaps_def"},
+        {"dutch": "enerzijds ... anderzijds", "definitionKey": "lesson_vocab_ononehand_def"}
     ],
     "exampleSentences": [
-        {"dutch": "Ik vind dit boek erg interessant.", "englishHint": "I find this book very interesting."}
+        {"dutch": "Ik vind dit boek erg interessant, maar volgens mij is de film beter.", "englishHint": "I find this book very interesting, but in my opinion, the movie is better."},
+        {"dutch": "Ik ben het niet met je eens.", "englishHint": "I do not agree with you."}
     ],
     "tips": [
       { "tipKey": "lesson_tip_opinions_directness_nuance_text" },
@@ -469,16 +528,19 @@
     "titleKey": "lesson_title_imperfectum_regular",
     "explanationKey": "lesson_expl_imperfectum_regular",
     "vocabulary": [
-        {"dutch": "ik werkte", "definitionKey": "lesson_vocab_iworked_imp_def"},
-        {"dutch": "jij speelde", "definitionKey": "lesson_vocab_youplayed_imp_def"}
+        {"dutch": "ik werkte (-te)", "definitionKey": "lesson_vocab_iworked_imp_def"},
+        {"dutch": "jij speelde (-de)", "definitionKey": "lesson_vocab_youplayed_imp_def"},
+        {"dutch": "hij woonde", "definitionKey": "lesson_vocab_helived_imp_def"},
+        {"dutch": "wij maakten", "definitionKey": "lesson_vocab_wemade_imp_def"}
     ],
     "exampleSentences": [
-        {"dutch": "Vroeger woonde ik in Rotterdam.", "englishHint": "I used to live in Rotterdam."}
+        {"dutch": "Vroeger woonde ik in Rotterdam en werkte ik in een café.", "englishHint": "I used to live in Rotterdam and I worked in a café."},
+        {"dutch": "Zij speelden gisteren de hele dag buiten.", "englishHint": "They played outside all day yesterday."}
     ],
     "tips": [
       { "tipKey": "lesson_tip_imperfectum_storytelling_text" },
       { "tipKey": "lesson_tip_imperfectum_vs_perfectum_text" },
-      { "tipKey": "lesson_tip_imperfectum_regularity_text" }
+      { "tipKey": "lesson_tip_imperfectum_kofschip_text" }
     ]
   },
   {
@@ -488,12 +550,13 @@
     "titleKey": "lesson_title_future_tense",
     "explanationKey": "lesson_expl_future_tense",
     "vocabulary": [
-        {"dutch": "zullen", "definitionKey": "lesson_vocab_willshall_def"},
-        {"dutch": "gaan + infinitief", "definitionKey": "lesson_vocab_goingto_def"}
+        {"dutch": "zullen (zal, zult, zal, zullen)", "definitionKey": "lesson_vocab_willshall_def"},
+        {"dutch": "gaan + infinitief", "definitionKey": "lesson_vocab_goingto_def"},
+        {"dutch": "van plan zijn te", "definitionKey": "lesson_vocab_plantodo_def"}
     ],
     "exampleSentences": [
         {"dutch": "Morgen zal het regenen.", "englishHint": "Tomorrow it will rain."},
-        {"dutch": "Ik ga een film kijken.", "englishHint": "I am going to watch a movie."}
+        {"dutch": "Ik ga volgende week een nieuwe fiets kopen.", "englishHint": "I am going to buy a new bicycle next week."}
     ],
     "tips": [
       { "tipKey": "lesson_tip_future_certainty_text" },
@@ -502,20 +565,21 @@
     ]
   },
   {
-    "id": "modal-verbs-kunnen-willen-moeten-mogen",
+    "id": "modal-verbs-kunnen-willen-moeten-mogen-zouden",
     "difficulty": "ui_difficulty_hard",
     "themeKey": "lesson_theme_verbs",
-    "titleKey": "lesson_title_modal_verbs",
-    "explanationKey": "lesson_expl_modal_verbs",
+    "titleKey": "lesson_title_modal_verbs_extended",
+    "explanationKey": "lesson_expl_modal_verbs_extended",
     "vocabulary": [
-        {"dutch": "kunnen (kan)", "definitionKey": "lesson_vocab_can_def"},
-        {"dutch": "willen (wil)", "definitionKey": "lesson_vocab_want_def"},
+        {"dutch": "kunnen (kan, kunt, kan)", "definitionKey": "lesson_vocab_can_def"},
+        {"dutch": "willen (wil, wilt, wil)", "definitionKey": "lesson_vocab_want_def"},
         {"dutch": "moeten (moet)", "definitionKey": "lesson_vocab_must_def"},
-        {"dutch": "mogen (mag)", "definitionKey": "lesson_vocab_may_allowed_def"}
+        {"dutch": "mogen (mag)", "definitionKey": "lesson_vocab_may_allowed_def"},
+        {"dutch": "zouden (zou)", "definitionKey": "lesson_vocab_would_should_def"}
     ],
     "exampleSentences": [
-        {"dutch": "Ik kan goed zwemmen.", "englishHint": "I can swim well."},
-        {"dutch": "Wij willen op vakantie gaan.", "englishHint": "We want to go on vacation."}
+        {"dutch": "Ik kan goed zwemmen, maar ik wil liever fietsen.", "englishHint": "I can swim well, but I'd rather cycle."},
+        {"dutch": "Zou u mij kunnen helpen alstublieft?", "englishHint": "Could you help me please?"}
     ],
     "tips": [
       { "tipKey": "lesson_tip_modal_politeness_requests_text" },
@@ -524,21 +588,20 @@
     ]
   },
   {
-    "id": "making-comparisons",
+    "id": "making-comparisons-irregular",
     "difficulty": "ui_difficulty_hard",
     "themeKey": "lesson_theme_adjectives_adverbs",
-    "titleKey": "lesson_title_comparisons",
-    "explanationKey": "lesson_expl_comparisons",
+    "titleKey": "lesson_title_comparisons_irregular",
+    "explanationKey": "lesson_expl_comparisons_irregular",
     "vocabulary": [
-        {"dutch": "groter dan", "definitionKey": "lesson_vocab_biggerthan_def"},
-        {"dutch": "de grootste", "definitionKey": "lesson_vocab_biggest_def"},
-        {"dutch": "meer ... dan", "definitionKey": "lesson_vocab_morethan_def"},
-        {"dutch": "het meest", "definitionKey": "lesson_vocab_themost_def"},
-        {"dutch": "even ... als", "definitionKey": "lesson_vocab_as_as_def"}
+        {"dutch": "goed - beter - best", "definitionKey": "lesson_vocab_goodbetterbest_def"},
+        {"dutch": "veel - meer - meest", "definitionKey": "lesson_vocab_muchmoremost_def"},
+        {"dutch": "weinig - minder - minst", "definitionKey": "lesson_vocab_fewlessleast_def"},
+        {"dutch": "graag - liever - liefst", "definitionKey": "lesson_vocab_gladlyprefermost_def"}
     ],
     "exampleSentences": [
-        {"dutch": "Mijn huis is groter dan jouw huis.", "englishHint": "My house is bigger than your house."},
-        {"dutch": "Dit is het lekkerste ijsje ooit!", "englishHint": "This is the tastiest ice cream ever!"}
+        {"dutch": "Mijn huis is groter dan jouw huis, maar jouw tuin is het grootst.", "englishHint": "My house is bigger than your house, but your garden is the biggest."},
+        {"dutch": "Ik eet graag pizza, maar pasta eet ik liever.", "englishHint": "I like eating pizza, but I prefer to eat pasta."}
     ],
     "tips": [
       { "tipKey": "lesson_tip_comparisons_advertising_text" },
@@ -555,10 +618,12 @@
     "vocabulary": [
         {"dutch": "Het spijt me u te moeten storen, maar...", "definitionKey": "lesson_vocab_sorrytobother_def"},
         {"dutch": "Er is een klein probleem met...", "definitionKey": "lesson_vocab_smallproblem_def"},
-        {"dutch": "Zou u misschien kunnen...", "definitionKey": "lesson_vocab_couldyouperhaps_def"}
+        {"dutch": "Ik ben niet helemaal tevreden over...", "definitionKey": "lesson_vocab_notentirelysatisfied_def"},
+        {"dutch": "Zou u misschien kunnen...", "definitionKey": "lesson_vocab_couldyouperhaps_def"},
+        {"dutch": "een klacht indienen", "definitionKey": "lesson_vocab_fileacomplaint_def"}
     ],
     "exampleSentences": [
-        {"dutch": "Pardon, maar deze soep is koud.", "englishHint": "Excuse me, but this soup is cold."}
+        {"dutch": "Pardon, maar deze soep is koud. Zou u hem kunnen opwarmen?", "englishHint": "Excuse me, but this soup is cold. Could you warm it up?"}
     ],
     "tips": [
       { "tipKey": "lesson_tip_complaining_direct_but_polite_text" },
@@ -576,10 +641,14 @@
         {"dutch": "Heb je het nieuws gehoord over...?", "definitionKey": "lesson_vocab_heardnews_def"},
         {"dutch": "Wat vind jij van...?", "definitionKey": "lesson_vocab_whatyouthinkof_def"},
         {"dutch": "de krant", "definitionKey": "lesson_vocab_newspaper_def"},
-        {"dutch": "het journaal", "definitionKey": "lesson_vocab_newsbulletin_def"}
+        {"dutch": "het journaal", "definitionKey": "lesson_vocab_newsbulletin_def"},
+        {"dutch": "het artikel", "definitionKey": "lesson_vocab_article_def"},
+        {"dutch": "de politiek", "definitionKey": "lesson_vocab_politics_def"},
+        {"dutch": "de economie", "definitionKey": "lesson_vocab_economy_def"}
     ],
     "exampleSentences": [
-        {"dutch": "Het stond vandaag in de krant.", "englishHint": "It was in the newspaper today."}
+        {"dutch": "Het stond vandaag in de krant dat de benzineprijzen weer stijgen.", "englishHint": "It was in the newspaper today that petrol prices are rising again."},
+        {"dutch": "Wat vind jij van de huidige politieke situatie?", "englishHint": "What do you think of the current political situation?"}
     ],
     "tips": [
       { "tipKey": "lesson_tip_news_sources_text" },
@@ -595,12 +664,14 @@
     "explanationKey": "lesson_expl_job_interview_basics",
     "vocabulary": [
         {"dutch": "het sollicitatiegesprek", "definitionKey": "lesson_vocab_jobinterview_def"},
+        {"dutch": "de vacature", "definitionKey": "lesson_vocab_vacancy_def"},
         {"dutch": "mijn sterke punten", "definitionKey": "lesson_vocab_mystrengths_def"},
-        {"dutch": "mijn zwakke punten", "definitionKey": "lesson_vocab_myweaknesses_def"},
-        {"dutch": "Waarom wilt u hier werken?", "definitionKey": "lesson_vocab_whyyuwanttoworkhere_def"}
+        {"dutch": "mijn zwakke punten / ontwikkelpunten", "definitionKey": "lesson_vocab_myweaknesses_def"},
+        {"dutch": "Waarom wilt u hier werken?", "definitionKey": "lesson_vocab_whyyuwanttoworkhere_def"},
+        {"dutch": "Wat zijn uw salarisverwachtingen?", "definitionKey": "lesson_vocab_salaryexpectations_def"}
     ],
     "exampleSentences": [
-        {"dutch": "Ik ben zeer gemotiveerd en een harde werker.", "englishHint": "I am very motivated and a hard worker."}
+        {"dutch": "Ik ben zeer gemotiveerd en een harde werker met ervaring in projectmanagement.", "englishHint": "I am very motivated and a hard worker with experience in project management."}
     ],
     "tips": [
       { "tipKey": "lesson_tip_job_interview_preparation_text" },
@@ -618,10 +689,13 @@
         {"dutch": "Ik voel me niet lekker.", "definitionKey": "lesson_vocab_notfeelingwell_def"},
         {"dutch": "Ik heb hoofdpijn / buikpijn / keelpijn.", "definitionKey": "lesson_vocab_ihaveheadache_def"},
         {"dutch": "de koorts", "definitionKey": "lesson_vocab_fever_def"},
+        {"dutch": "misselijk", "definitionKey": "lesson_vocab_nauseous_def"},
+        {"dutch": "de apotheek", "definitionKey": "lesson_vocab_pharmacy_def"},
         {"dutch": "het recept (medicijnen)", "definitionKey": "lesson_vocab_prescription_def"}
     ],
     "exampleSentences": [
-        {"dutch": "Ik heb al drie dagen koorts.", "englishHint": "I have had a fever for three days."}
+        {"dutch": "Ik heb al drie dagen koorts en ik voel me misselijk.", "englishHint": "I have had a fever for three days and I feel nauseous."},
+        {"dutch": "De dokter heeft mij een recept voor antibiotica gegeven.", "englishHint": "The doctor gave me a prescription for antibiotics."}
     ],
     "tips": [
       { "tipKey": "lesson_tip_health_huisarts_text" },
@@ -630,19 +704,20 @@
     ]
   },
   {
-    "id": "conditional-sentences-als",
+    "id": "conditional-sentences-als-zou",
     "difficulty": "ui_difficulty_hard",
     "themeKey": "lesson_theme_grammar_advanced",
-    "titleKey": "lesson_title_conditional_als",
-    "explanationKey": "lesson_expl_conditional_als",
+    "titleKey": "lesson_title_conditional_als_zou",
+    "explanationKey": "lesson_expl_conditional_als_zou",
     "vocabulary": [
         {"dutch": "Als ..., dan ...", "definitionKey": "lesson_vocab_ifthendef"},
         {"dutch": "als het regent", "definitionKey": "lesson_vocab_ifitrains_def"},
-        {"dutch": "zou", "definitionKey": "lesson_vocab_would_def"}
+        {"dutch": "zou / zouden (conjunctive)", "definitionKey": "lesson_vocab_would_should_conj_def"},
+        {"dutch": "als ik jou was...", "definitionKey": "lesson_vocab_ifiwereyou_def"}
     ],
     "exampleSentences": [
-        {"dutch": "Als ik tijd heb, kom ik morgen.", "englishHint": "If I have time, I will come tomorrow."},
-        {"dutch": "Als ik rijk was, zou ik een groot huis kopen.", "englishHint": "If I were rich, I would buy a big house."}
+        {"dutch": "Als ik tijd heb, kom ik morgen.", "englishHint": "If I have time, I will come tomorrow. (real conditional)"},
+        {"dutch": "Als ik rijk was, zou ik een groot huis kopen.", "englishHint": "If I were rich, I would buy a big house. (unreal conditional)"}
     ],
     "tips": [
       { "tipKey": "lesson_tip_conditional_real_unreal_text" },

@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom'; // useNavigate for clickable card
 import { useTranslation } from '../hooks/useTranslation';
-// import styles from './LessonsPage.module.css';
+import AccordionItem from '../components/common/AccordionItem';
 
 const LessonsPage = () => {
   const { t, isLoadingTranslations } = useTranslation();
+  const navigate = useNavigate(); // Hook for programmatic navigation
+  const [allLessons, setAllLessons] = useState([]);
   const [lessonsByDifficulty, setLessonsByDifficulty] = useState({});
   const [loadingData, setLoadingData] = useState(true);
   const [error, setError] = useState(null);
+  const [activeAccordion, setActiveAccordion] = useState(null);
 
-  // Define the order of difficulty levels for rendering
- const difficultyOrder = ['ui_difficulty_easy', 'ui_difficulty_medium', 'ui_difficulty_hard'];
+  const difficultyOrder = ['ui_difficulty_easy', 'ui_difficulty_medium', 'ui_difficulty_hard'];
 
   useEffect(() => {
     setLoadingData(true);
@@ -22,16 +24,15 @@ const LessonsPage = () => {
         return response.json();
       })
       .then(data => {
-        // Group lessons by difficulty
-        const grouped = data.reduce((acc, lesson) => {
-          const difficulty = lesson.difficulty || 'difficulty_medium'; // Default if undefined
-          if (!acc[difficulty]) {
-            acc[difficulty] = [];
-          }
-          acc[difficulty].push(lesson);
-          return acc;
-        }, {});
-        setLessonsByDifficulty(grouped);
+        setAllLessons(data);
+        if (data.length > 0 && difficultyOrder.length > 0) {
+             const firstGroupWithLessons = difficultyOrder.find(dKey => 
+                data.some(lesson => (lesson.difficulty || 'ui_difficulty_medium') === dKey)
+             );
+             if (firstGroupWithLessons) {
+                setActiveAccordion(firstGroupWithLessons);
+             }
+        }
         setLoadingData(false);
       })
       .catch(err => {
@@ -41,36 +42,91 @@ const LessonsPage = () => {
       });
   }, []);
 
-  if (isLoadingTranslations && Object.keys(lessonsByDifficulty).length === 0) return <p>{t('ui_loading') || 'Loading translations...'}</p>;
+  useEffect(() => {
+    if (loadingData || isLoadingTranslations || allLessons.length === 0) return;
+
+    const grouped = allLessons.reduce((acc, lesson) => {
+      const difficulty = lesson.difficulty || 'ui_difficulty_medium';
+      if (!acc[difficulty]) {
+        acc[difficulty] = [];
+      }
+      acc[difficulty].push(lesson);
+      return acc;
+    }, {});
+    setLessonsByDifficulty(grouped);
+  }, [allLessons, loadingData, isLoadingTranslations]);
+
+  const toggleAccordion = (difficultyKey) => {
+    setActiveAccordion(prevKey => (prevKey === difficultyKey ? null : difficultyKey));
+  };
+
+  const handleCardClick = (lessonId) => {
+    navigate(`/lessons/${lessonId}`);
+  };
+
+  if (isLoadingTranslations && allLessons.length === 0) return <p>{t('ui_loading') || 'Loading translations...'}</p>;
   if (loadingData) return <p>{t('ui_loading') || 'Loading lessons...'}</p>;
   if (error) return <p>{t('ui_error_loading_data') || 'Error loading lessons'}: {error}</p>;
+
+  const hasAnyLessonsToShow = Object.values(lessonsByDifficulty).some(group => group && group.length > 0);
 
   return (
     <div>
       <h1>{t('ui_page_title_lessons') || 'Dutch Lessons for A2'}</h1>
       <p>{t('ui_lessons_page_intro') || 'Browse through our A2 level Dutch lessons, grouped by difficulty.'}</p>
 
-      {difficultyOrder.map(difficultyKey => (
-        lessonsByDifficulty[difficultyKey] && lessonsByDifficulty[difficultyKey].length > 0 && (
-          <section key={difficultyKey} className="difficulty-group" style={{ marginBottom: '40px' }}>
-            <h2>{t(difficultyKey) || difficultyKey.split('_')[1]}</h2> {/* Translates "Easy", "Medium", "Hard" */}
-            <div className="list-container">
-              {lessonsByDifficulty[difficultyKey].map(lesson => (
-                <div key={lesson.id} className="card">
-                  <h3>{t(lesson.titleKey) || lesson.id}</h3>
-                  <p className="card-theme">{t(lesson.themeKey) || 'No theme'}</p>
-                  <Link to={`/lessons/${lesson.id}`} className="button">
-                    {t('ui_view_lesson_button') || 'View Lesson'}
-                  </Link>
-                </div>
-              ))}
-            </div>
-          </section>
-        )
-      ))}
+      <div className="difficulty-groups-accordion">
+        {difficultyOrder.map(difficultyKey => {
+          const lessonsInGroup = lessonsByDifficulty[difficultyKey] || [];
+          if (lessonsInGroup.length === 0 && allLessons.length > 0) {
+            return null;
+          }
 
-      {Object.keys(lessonsByDifficulty).length === 0 && !loadingData && (
-        <p>{t('ui_no_lessons_found') || 'No lessons found.'}</p>
+          return (
+            <AccordionItem
+              key={difficultyKey}
+              title={t(difficultyKey) || difficultyKey.split('_').pop()}
+              isOpen={activeAccordion === difficultyKey}
+              onToggle={() => toggleAccordion(difficultyKey)}
+              headerElementType="h2"
+            >
+              {lessonsInGroup.length > 0 ? (
+                <div className="list-container lessons-grid">
+                  {lessonsInGroup.map(lesson => (
+                    <div 
+                      key={lesson.id} 
+                      className="card enhanced-lesson-card clickable-card" // Added clickable-card
+                      onClick={() => handleCardClick(lesson.id)}
+                      role="link" // Accessibility: indicates it behaves like a link
+                      tabIndex={0} // Accessibility: makes it focusable
+                      onKeyPress={(e) => { if (e.key === 'Enter' || e.key === ' ') handleCardClick(lesson.id); }} // Accessibility
+                    >
+                      {lesson.coverImage && (
+                        <div className="card-image-container">
+                          <img src={lesson.coverImage} alt={t(lesson.titleKey) || lesson.id} />
+                        </div>
+                      )}
+                      <div className="card-content">
+                        {/* Theme removed from visible content, but still available in lesson object if needed for filtering */}
+                        <h3>{t(lesson.titleKey) || lesson.id}</h3>
+                        <p className="card-snippet">
+                          {(t(lesson.explanationKey) || 'No description available.').substring(0, 80) + '...'} 
+                        </p>
+                        {/* Button removed */}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <p className="no-items-message">{t('ui_no_lessons_found_in_difficulty') || 'No lessons currently in this difficulty level.'}</p>
+              )}
+            </AccordionItem>
+          );
+        })}
+      </div>
+
+      {!loadingData && !hasAnyLessonsToShow && (
+         <p className="no-items-message">{t('ui_no_lessons_found') || 'No lessons found.'}</p>
       )}
     </div>
   );
