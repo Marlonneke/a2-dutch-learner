@@ -1,0 +1,56 @@
+﻿{
+    "id":  "days-of-week",
+    "difficulty":  "ui_difficulty_easy",
+    "themeKey":  "lesson_theme_time_date",
+    "titleKey":  "lesson_title_days_week",
+    "shortDescriptionKey":  "lesson_shortdesc_days_week",
+    "explanationKey":  "lesson_expl_days_week",
+    "coverImage":  "/images/lessons/days_week_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "maandag",
+                           "definitionKey":  "lesson_vocab_monday_def"
+                       },
+                       {
+                           "dutch":  "dinsdag",
+                           "definitionKey":  "lesson_vocab_tuesday_def"
+                       },
+                       {
+                           "dutch":  "woensdag",
+                           "definitionKey":  "lesson_vocab_wednesday_def"
+                       },
+                       {
+                           "dutch":  "donderdag",
+                           "definitionKey":  "lesson_vocab_thursday_def"
+                       },
+                       {
+                           "dutch":  "vrijdag",
+                           "definitionKey":  "lesson_vocab_friday_def"
+                       },
+                       {
+                           "dutch":  "zaterdag",
+                           "definitionKey":  "lesson_vocab_saturday_def"
+                       },
+                       {
+                           "dutch":  "zondag",
+                           "definitionKey":  "lesson_vocab_sunday_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Vandaag is het maandag.",
+                                 "englishHint":  "Today is Monday."
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_days_weekend_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_days_planning_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_days_abbreviations_text"
+                 }
+             ]
+}

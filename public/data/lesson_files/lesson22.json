@@ -1,0 +1,44 @@
+﻿{
+    "id":  "expressing-opinions-basic",
+    "difficulty":  "ui_difficulty_hard",
+    "themeKey":  "lesson_theme_opinions",
+    "titleKey":  "lesson_title_opinions_basic",
+    "shortDescriptionKey":  "lesson_shortdesc_opinions_basic",
+    "explanationKey":  "lesson_expl_opinions_basic",
+    "coverImage":  "/images/lessons/opinions_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "Ik vind...",
+                           "definitionKey":  "lesson_vocab_ifind_def"
+                       },
+                       {
+                           "dutch":  "Ik denk dat...",
+                           "definitionKey":  "lesson_vocab_ithinkthat_def"
+                       },
+                       {
+                           "dutch":  "Volgens mij...",
+                           "definitionKey":  "lesson_vocab_inmyopinion_def"
+                       },
+                       {
+                           "dutch":  "Mee eens zijn",
+                           "definitionKey":  "lesson_vocab_agree_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Ik vind dit boek erg interessant.",
+                                 "englishHint":  "I find this book very interesting."
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_opinions_directness_nuance_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_opinions_poldermodel_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_opinions_respect_text"
+                 }
+             ]
+}

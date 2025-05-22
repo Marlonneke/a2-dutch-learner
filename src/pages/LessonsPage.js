@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom'; // useNavigate for clickable card
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from '../hooks/useTranslation';
 import AccordionItem from '../components/common/AccordionItem';
 
 const LessonsPage = () => {
   const { t, isLoadingTranslations } = useTranslation();
-  const navigate = useNavigate(); // Hook for programmatic navigation
-  const [allLessons, setAllLessons] = useState([]);
+  const navigate = useNavigate();
+  const [lessonManifest, setLessonManifest] = useState([]); 
   const [lessonsByDifficulty, setLessonsByDifficulty] = useState({});
   const [loadingData, setLoadingData] = useState(true);
   const [error, setError] = useState(null);
@@ -16,15 +16,15 @@ const LessonsPage = () => {
 
   useEffect(() => {
     setLoadingData(true);
-    fetch('/data/lessons_content.json')
+    fetch('/data/lessons_manifest.json') 
       .then(response => {
         if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
+          throw new Error(`HTTP error! status: ${response.status} - Could not load lessons manifest.`);
         }
         return response.json();
       })
       .then(data => {
-        setAllLessons(data);
+        setLessonManifest(data); 
         if (data.length > 0 && difficultyOrder.length > 0) {
              const firstGroupWithLessons = difficultyOrder.find(dKey => 
                 data.some(lesson => (lesson.difficulty || 'ui_difficulty_medium') === dKey)
@@ -36,25 +36,26 @@ const LessonsPage = () => {
         setLoadingData(false);
       })
       .catch(err => {
-        console.error("Failed to load lessons content:", err);
+        console.error("Failed to load lessons_manifest.json:", err);
         setError(err.message);
         setLoadingData(false);
       });
   }, []);
 
   useEffect(() => {
-    if (loadingData || isLoadingTranslations || allLessons.length === 0) return;
+    if (loadingData || isLoadingTranslations || lessonManifest.length === 0) return;
 
-    const grouped = allLessons.reduce((acc, lesson) => {
-      const difficulty = lesson.difficulty || 'ui_difficulty_medium';
+    const grouped = lessonManifest.reduce((acc, lessonSummary) => {
+      const difficulty = lessonSummary.difficulty || 'ui_difficulty_medium';
       if (!acc[difficulty]) {
         acc[difficulty] = [];
       }
-      acc[difficulty].push(lesson);
+      acc[difficulty].push(lessonSummary);
       return acc;
     }, {});
     setLessonsByDifficulty(grouped);
-  }, [allLessons, loadingData, isLoadingTranslations]);
+  }, [lessonManifest, loadingData, isLoadingTranslations]);
+
 
   const toggleAccordion = (difficultyKey) => {
     setActiveAccordion(prevKey => (prevKey === difficultyKey ? null : difficultyKey));
@@ -64,9 +65,9 @@ const LessonsPage = () => {
     navigate(`/lessons/${lessonId}`);
   };
 
-  if (isLoadingTranslations && allLessons.length === 0) return <p>{t('ui_loading') || 'Loading translations...'}</p>;
-  if (loadingData) return <p>{t('ui_loading') || 'Loading lessons...'}</p>;
-  if (error) return <p>{t('ui_error_loading_data') || 'Error loading lessons'}: {error}</p>;
+  if (isLoadingTranslations && lessonManifest.length === 0) return <p>{t('ui_loading') || 'Loading translations...'}</p>;
+  if (loadingData) return <p>{t('ui_loading') || 'Loading lessons list...'}</p>;
+  if (error) return <p>{t('ui_error_loading_data') || 'Error loading lessons list'}: {error}</p>;
 
   const hasAnyLessonsToShow = Object.values(lessonsByDifficulty).some(group => group && group.length > 0);
 
@@ -78,7 +79,7 @@ const LessonsPage = () => {
       <div className="difficulty-groups-accordion">
         {difficultyOrder.map(difficultyKey => {
           const lessonsInGroup = lessonsByDifficulty[difficultyKey] || [];
-          if (lessonsInGroup.length === 0 && allLessons.length > 0) {
+          if (lessonsInGroup.length === 0 && lessonManifest.length > 0) {
             return null;
           }
 
@@ -92,14 +93,14 @@ const LessonsPage = () => {
             >
               {lessonsInGroup.length > 0 ? (
                 <div className="list-container lessons-grid">
-                  {lessonsInGroup.map(lesson => (
+                  {lessonsInGroup.map(lesson => ( 
                     <div 
                       key={lesson.id} 
-                      className="card enhanced-lesson-card clickable-card" // Added clickable-card
+                      className="card enhanced-lesson-card clickable-card"
                       onClick={() => handleCardClick(lesson.id)}
-                      role="link" // Accessibility: indicates it behaves like a link
-                      tabIndex={0} // Accessibility: makes it focusable
-                      onKeyPress={(e) => { if (e.key === 'Enter' || e.key === ' ') handleCardClick(lesson.id); }} // Accessibility
+                      role="link"
+                      tabIndex={0}
+                      onKeyPress={(e) => { if (e.key === 'Enter' || e.key === ' ') handleCardClick(lesson.id); }}
                     >
                       {lesson.coverImage && (
                         <div className="card-image-container">
@@ -107,12 +108,10 @@ const LessonsPage = () => {
                         </div>
                       )}
                       <div className="card-content">
-                        {/* Theme removed from visible content, but still available in lesson object if needed for filtering */}
                         <h3>{t(lesson.titleKey) || lesson.id}</h3>
                         <p className="card-snippet">
-                          {(t(lesson.explanationKey) || 'No description available.').substring(0, 80) + '...'} 
+                          {t(lesson.shortDescriptionKey) || 'Click to learn more...'}
                         </p>
-                        {/* Button removed */}
                       </div>
                     </div>
                   ))}

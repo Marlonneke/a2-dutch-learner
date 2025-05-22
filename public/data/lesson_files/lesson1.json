@@ -1,0 +1,48 @@
+﻿{
+    "id":  "greetings-introductions",
+    "difficulty":  "ui_difficulty_easy",
+    "themeKey":  "lesson_theme_greetings",
+    "titleKey":  "lesson_title_greetings_full",
+    "shortDescriptionKey":  "lesson_shortdesc_greetings",
+    "explanationKey":  "lesson_expl_greetings_full",
+    "coverImage":  "/images/lessons/greetings_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "Hallo",
+                           "definitionKey":  "lesson_vocab_hello_def"
+                       },
+                       {
+                           "dutch":  "Goedemorgen",
+                           "definitionKey":  "lesson_vocab_goodmorning_def"
+                       },
+                       {
+                           "dutch":  "Ik ben [naam]",
+                           "definitionKey":  "lesson_vocab_iam_name_def"
+                       },
+                       {
+                           "dutch":  "Hoe heet jij/u?",
+                           "definitionKey":  "lesson_vocab_whatisyourname_def"
+                       },
+                       {
+                           "dutch":  "Aangenaam",
+                           "definitionKey":  "lesson_vocab_nicetomeetyou_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Hallo, mijn naam is Piet. Hoe heet jij?",
+                                 "englishHint":  "Hello, my name is Piet. What is your name?"
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_greetings_formality_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_greetings_threekisses_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_greetings_directness_text"
+                 }
+             ]
+}

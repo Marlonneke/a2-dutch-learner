@@ -1,0 +1,44 @@
+﻿{
+    "id":  "food-drinks-common",
+    "difficulty":  "ui_difficulty_easy",
+    "themeKey":  "lesson_theme_food",
+    "titleKey":  "lesson_title_food_drinks_common",
+    "shortDescriptionKey":  "lesson_shortdesc_food_drinks_common",
+    "explanationKey":  "lesson_expl_food_drinks_common",
+    "coverImage":  "/images/lessons/food_drinks_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "het brood",
+                           "definitionKey":  "lesson_vocab_bread_def"
+                       },
+                       {
+                           "dutch":  "de kaas",
+                           "definitionKey":  "lesson_vocab_cheese_def"
+                       },
+                       {
+                           "dutch":  "het water",
+                           "definitionKey":  "lesson_vocab_water_def"
+                       },
+                       {
+                           "dutch":  "de melk",
+                           "definitionKey":  "lesson_vocab_milk_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Ik eet brood met kaas.",
+                                 "englishHint":  "I eat bread with cheese."
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_food_lunch_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_food_coffee_culture_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_food_stroopwafel_text"
+                 }
+             ]
+}

@@ -1,0 +1,44 @@
+﻿{
+    "id":  "hobbies-free-time",
+    "difficulty":  "ui_difficulty_medium",
+    "themeKey":  "lesson_theme_leisure",
+    "titleKey":  "lesson_title_hobbies",
+    "shortDescriptionKey":  "lesson_shortdesc_hobbies",
+    "explanationKey":  "lesson_expl_hobbies",
+    "coverImage":  "/images/lessons/hobbies_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "lezen",
+                           "definitionKey":  "lesson_vocab_reading_def"
+                       },
+                       {
+                           "dutch":  "wandelen",
+                           "definitionKey":  "lesson_vocab_walking_def"
+                       },
+                       {
+                           "dutch":  "fietsen",
+                           "definitionKey":  "lesson_vocab_cycling_def"
+                       },
+                       {
+                           "dutch":  "sporten",
+                           "definitionKey":  "lesson_vocab_sports_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "In mijn vrije tijd lees ik graag boeken.",
+                                 "englishHint":  "In my free time, I like to read books."
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_hobbies_verenigingen_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_hobbies_outdoors_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_hobbies_gezelligheid_leisure_text"
+                 }
+             ]
+}

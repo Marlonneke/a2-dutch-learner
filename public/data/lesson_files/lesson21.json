@@ -1,0 +1,44 @@
+﻿{
+    "id":  "months-seasons",
+    "difficulty":  "ui_difficulty_medium",
+    "themeKey":  "lesson_theme_time_date",
+    "titleKey":  "lesson_title_months_seasons",
+    "shortDescriptionKey":  "lesson_shortdesc_months_seasons",
+    "explanationKey":  "lesson_expl_months_seasons",
+    "coverImage":  "/images/lessons/seasons_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "januari",
+                           "definitionKey":  "lesson_vocab_january_def"
+                       },
+                       {
+                           "dutch":  "februari",
+                           "definitionKey":  "lesson_vocab_february_def"
+                       },
+                       {
+                           "dutch":  "de lente",
+                           "definitionKey":  "lesson_vocab_spring_def"
+                       },
+                       {
+                           "dutch":  "de zomer",
+                           "definitionKey":  "lesson_vocab_summer_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Mijn verjaardag is in juli.",
+                                 "englishHint":  "My birthday is in July."
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_seasons_weather_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_seasons_holidays_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_seasons_activities_text"
+                 }
+             ]
+}

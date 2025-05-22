@@ -1,0 +1,52 @@
+﻿{
+    "id":  "colors-basic",
+    "difficulty":  "ui_difficulty_easy",
+    "themeKey":  "lesson_theme_colors",
+    "titleKey":  "lesson_title_colors_basic",
+    "shortDescriptionKey":  "lesson_shortdesc_colors_basic",
+    "explanationKey":  "lesson_expl_colors_basic",
+    "coverImage":  "/images/lessons/colors_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "rood",
+                           "definitionKey":  "lesson_vocab_red_def"
+                       },
+                       {
+                           "dutch":  "blauw",
+                           "definitionKey":  "lesson_vocab_blue_def"
+                       },
+                       {
+                           "dutch":  "geel",
+                           "definitionKey":  "lesson_vocab_yellow_def"
+                       },
+                       {
+                           "dutch":  "groen",
+                           "definitionKey":  "lesson_vocab_green_def"
+                       },
+                       {
+                           "dutch":  "zwart",
+                           "definitionKey":  "lesson_vocab_black_def"
+                       },
+                       {
+                           "dutch":  "wit",
+                           "definitionKey":  "lesson_vocab_white_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "De Nederlandse vlag is rood, wit en blauw.",
+                                 "englishHint":  "The Dutch flag is red, white, and blue."
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_colors_orange_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_colors_flowers_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_colors_art_text"
+                 }
+             ]
+}

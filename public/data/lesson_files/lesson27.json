@@ -1,0 +1,40 @@
+﻿{
+    "id":  "future-aspirations",
+    "difficulty":  "ui_difficulty_hard",
+    "themeKey":  "lesson_theme_future_goals",
+    "titleKey":  "lesson_title_future_aspirations",
+    "shortDescriptionKey":  "lesson_shortdesc_future_aspirations",
+    "explanationKey":  "lesson_expl_future_aspirations",
+    "coverImage":  "/images/lessons/aspirations_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "de droom",
+                           "definitionKey":  "lesson_vocab_dream_def"
+                       },
+                       {
+                           "dutch":  "het doel",
+                           "definitionKey":  "lesson_vocab_goal_def"
+                       },
+                       {
+                           "dutch":  "Ik hoop te...",
+                           "definitionKey":  "lesson_vocab_ihope_to_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Mijn droom is om de wereld rond te reizen.",
+                                 "englishHint":  "My dream is to travel around the world."
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_aspirations_realism_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_aspirations_career_path_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_aspirations_lifelong_learning_text"
+                 }
+             ]
+}

@@ -1,0 +1,40 @@
+﻿{
+    "id":  "making-appointments",
+    "difficulty":  "ui_difficulty_medium",
+    "themeKey":  "lesson_theme_daily_life",
+    "titleKey":  "lesson_title_making_appointments",
+    "shortDescriptionKey":  "lesson_shortdesc_making_appointments",
+    "explanationKey":  "lesson_expl_making_appointments",
+    "coverImage":  "/images/lessons/appointments_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "een afspraak maken",
+                           "definitionKey":  "lesson_vocab_makeappointment_def"
+                       },
+                       {
+                           "dutch":  "Kan ik een afspraak maken?",
+                           "definitionKey":  "lesson_vocab_canimakeappointment_def"
+                       },
+                       {
+                           "dutch":  "Wanneer schikt het u?",
+                           "definitionKey":  "lesson_vocab_whensuitsyou_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Ik wil graag een afspraak maken bij de kapper.",
+                                 "englishHint":  "I would like to make an appointment at the hairdresser\u0027s."
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_appointments_formal_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_appointments_confirmation_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_appointments_gp_text"
+                 }
+             ]
+}

@@ -1,0 +1,52 @@
+﻿{
+    "id":  "my-room-description",
+    "difficulty":  "ui_difficulty_easy",
+    "themeKey":  "lesson_theme_home_living",
+    "titleKey":  "lesson_title_my_room",
+    "shortDescriptionKey":  "lesson_shortdesc_my_room",
+    "explanationKey":  "lesson_expl_my_room",
+    "coverImage":  "/images/lessons/my_room_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "het bed",
+                           "definitionKey":  "lesson_vocab_bed_def"
+                       },
+                       {
+                           "dutch":  "de tafel",
+                           "definitionKey":  "lesson_vocab_table_def"
+                       },
+                       {
+                           "dutch":  "de stoel",
+                           "definitionKey":  "lesson_vocab_chair_def"
+                       },
+                       {
+                           "dutch":  "de kast",
+                           "definitionKey":  "lesson_vocab_cupboard_def"
+                       },
+                       {
+                           "dutch":  "het raam",
+                           "definitionKey":  "lesson_vocab_window_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Mijn bed staat naast het raam.",
+                                 "englishHint":  "My bed is next to the window."
+                             },
+                             {
+                                 "dutch":  "Er staat een kleine tafel in mijn kamer.",
+                                 "englishHint":  "There is a small table in my room."
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_room_gezellig_personal_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_room_student_housing_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_room_practicality_text"
+                 }
+             ]
+}

@@ -1,0 +1,40 @@
+﻿{
+    "id":  "dutch-traditions-holidays",
+    "difficulty":  "ui_difficulty_hard",
+    "themeKey":  "lesson_theme_culture_society",
+    "titleKey":  "lesson_title_dutch_traditions",
+    "shortDescriptionKey":  "lesson_shortdesc_dutch_traditions",
+    "explanationKey":  "lesson_expl_dutch_traditions",
+    "coverImage":  "/images/lessons/dutch_traditions_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "Sinterklaas",
+                           "definitionKey":  "lesson_vocab_sinterklaas_def"
+                       },
+                       {
+                           "dutch":  "Koningsdag",
+                           "definitionKey":  "lesson_vocab_kingsday_def"
+                       },
+                       {
+                           "dutch":  "Oud en Nieuw",
+                           "definitionKey":  "lesson_vocab_newyear_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Op Koningsdag draagt iedereen oranje kleding.",
+                                 "englishHint":  "On King\u0027s Day, everyone wears orange clothing."
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_traditions_participate_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_traditions_regional_diff_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_traditions_food_link_text"
+                 }
+             ]
+}

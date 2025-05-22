@@ -1,0 +1,40 @@
+﻿{
+    "id":  "job-interview-basics",
+    "difficulty":  "ui_difficulty_hard",
+    "themeKey":  "lesson_theme_work",
+    "titleKey":  "lesson_title_job_interview_basics",
+    "shortDescriptionKey":  "lesson_shortdesc_job_interview_basics",
+    "explanationKey":  "lesson_expl_job_interview_basics",
+    "coverImage":  "/images/lessons/job_interview_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "het sollicitatiegesprek",
+                           "definitionKey":  "lesson_vocab_jobinterview_def"
+                       },
+                       {
+                           "dutch":  "mijn sterke punten",
+                           "definitionKey":  "lesson_vocab_mystrengths_def"
+                       },
+                       {
+                           "dutch":  "Waarom wilt u hier werken?",
+                           "definitionKey":  "lesson_vocab_whyyuwanttoworkhere_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Ik ben zeer gemotiveerd en een harde werker.",
+                                 "englishHint":  "I am very motivated and a hard worker."
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_job_interview_preparation_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_job_interview_punctuality_dress_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_job_interview_dutch_proficiency_text"
+                 }
+             ]
+}

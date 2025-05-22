@@ -1,0 +1,48 @@
+﻿{
+    "id":  "numbers-0-20",
+    "difficulty":  "ui_difficulty_easy",
+    "themeKey":  "lesson_theme_numbers",
+    "titleKey":  "lesson_title_numbers_0_20",
+    "shortDescriptionKey":  "lesson_shortdesc_numbers_0_20",
+    "explanationKey":  "lesson_expl_numbers_0_20",
+    "coverImage":  "/images/lessons/numbers_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "nul",
+                           "definitionKey":  "lesson_vocab_zero_def"
+                       },
+                       {
+                           "dutch":  "een",
+                           "definitionKey":  "lesson_vocab_one_def"
+                       },
+                       {
+                           "dutch":  "tien",
+                           "definitionKey":  "lesson_vocab_ten_def"
+                       },
+                       {
+                           "dutch":  "elf",
+                           "definitionKey":  "lesson_vocab_eleven_def"
+                       },
+                       {
+                           "dutch":  "twintig",
+                           "definitionKey":  "lesson_vocab_twenty_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Ik heb twee appels en drie peren.",
+                                 "englishHint":  "I have two apples and three pears."
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_numbers_euro_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_numbers_time_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_numbers_practice_text"
+                 }
+             ]
+}

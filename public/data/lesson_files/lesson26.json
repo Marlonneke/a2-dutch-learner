@@ -1,0 +1,40 @@
+﻿{
+    "id":  "memorable-holiday",
+    "difficulty":  "ui_difficulty_hard",
+    "themeKey":  "lesson_theme_travel",
+    "titleKey":  "lesson_title_memorable_holiday",
+    "shortDescriptionKey":  "lesson_shortdesc_memorable_holiday",
+    "explanationKey":  "lesson_expl_memorable_holiday",
+    "coverImage":  "/images/lessons/holiday_memory_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "de vakantie",
+                           "definitionKey":  "lesson_vocab_holiday_def"
+                       },
+                       {
+                           "dutch":  "onvergetelijk",
+                           "definitionKey":  "lesson_vocab_unforgettable_def"
+                       },
+                       {
+                           "dutch":  "de herinnering",
+                           "definitionKey":  "lesson_vocab_memory_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Vorig jaar was ik in ItaliÃ«; het was onvergetelijk!",
+                                 "englishHint":  "Last year I was in Italy; it was unforgettable!"
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_holiday_sharing_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_holiday_photos_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_holiday_future_plans_text"
+                 }
+             ]
+}

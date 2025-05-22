@@ -1,0 +1,40 @@
+﻿{
+    "id":  "city-vs-country",
+    "difficulty":  "ui_difficulty_hard",
+    "themeKey":  "lesson_theme_society_living",
+    "titleKey":  "lesson_title_city_vs_country",
+    "shortDescriptionKey":  "lesson_shortdesc_city_vs_country",
+    "explanationKey":  "lesson_expl_city_vs_country",
+    "coverImage":  "/images/lessons/city_country_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "de stad",
+                           "definitionKey":  "lesson_vocab_city_def"
+                       },
+                       {
+                           "dutch":  "het platteland",
+                           "definitionKey":  "lesson_vocab_countryside_def"
+                       },
+                       {
+                           "dutch":  "de voordelen",
+                           "definitionKey":  "lesson_vocab_advantages_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "De stad biedt veel voorzieningen, maar het platteland biedt rust.",
+                                 "englishHint":  "The city offers many amenities, but the countryside offers peace."
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_citycountry_randstad_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_citycountry_transport_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_citycountry_preferences_text"
+                 }
+             ]
+}

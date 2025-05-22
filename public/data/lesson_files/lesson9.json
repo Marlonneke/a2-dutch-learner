@@ -1,0 +1,40 @@
+﻿{
+    "id":  "to-have-hebben",
+    "difficulty":  "ui_difficulty_easy",
+    "themeKey":  "lesson_theme_verbs",
+    "titleKey":  "lesson_title_verb_hebben",
+    "shortDescriptionKey":  "lesson_shortdesc_verb_hebben",
+    "explanationKey":  "lesson_expl_verb_hebben",
+    "coverImage":  "/images/lessons/have_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "ik heb",
+                           "definitionKey":  "lesson_vocab_ihave_def"
+                       },
+                       {
+                           "dutch":  "jij hebt",
+                           "definitionKey":  "lesson_vocab_youhave_def"
+                       },
+                       {
+                           "dutch":  "hij/zij/het heeft",
+                           "definitionKey":  "lesson_vocab_hehas_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Ik heb een fiets.",
+                                 "englishHint":  "I have a bicycle."
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_hebben_possession_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_hebben_auxiliary_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_hebben_idioms_text"
+                 }
+             ]
+}

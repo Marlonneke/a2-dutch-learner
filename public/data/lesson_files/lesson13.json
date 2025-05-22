@@ -1,0 +1,40 @@
+﻿{
+    "id":  "numbers-100-1000",
+    "difficulty":  "ui_difficulty_medium",
+    "themeKey":  "lesson_theme_numbers",
+    "titleKey":  "lesson_title_numbers_100_1000",
+    "shortDescriptionKey":  "lesson_shortdesc_numbers_100_1000",
+    "explanationKey":  "lesson_expl_numbers_100_1000",
+    "coverImage":  "/images/lessons/numbers_large_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "honderdeen (101)",
+                           "definitionKey":  "lesson_vocab_101_def"
+                       },
+                       {
+                           "dutch":  "tweehonderd (200)",
+                           "definitionKey":  "lesson_vocab_200_def"
+                       },
+                       {
+                           "dutch":  "duizend (1000)",
+                           "definitionKey":  "lesson_vocab_1000_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Dit horloge kost driehonderdvijfennegentig euro.",
+                                 "englishHint":  "This watch costs three hundred ninety-five euros."
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_numbers_large_clarity_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_numbers_prices_housing_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_numbers_bank_transactions_text"
+                 }
+             ]
+}

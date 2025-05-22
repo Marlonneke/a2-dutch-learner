@@ -1,0 +1,40 @@
+﻿{
+    "id":  "simple-questions-who-what-where",
+    "difficulty":  "ui_difficulty_easy",
+    "themeKey":  "lesson_theme_questions",
+    "titleKey":  "lesson_title_simple_questions_www",
+    "shortDescriptionKey":  "lesson_shortdesc_simple_questions_www",
+    "explanationKey":  "lesson_expl_simple_questions_www",
+    "coverImage":  "/images/lessons/questions_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "Wie?",
+                           "definitionKey":  "lesson_vocab_who_def"
+                       },
+                       {
+                           "dutch":  "Wat?",
+                           "definitionKey":  "lesson_vocab_what_def"
+                       },
+                       {
+                           "dutch":  "Waar?",
+                           "definitionKey":  "lesson_vocab_where_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Wie is dat?",
+                                 "englishHint":  "Who is that?"
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_questions_politeness_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_questions_curiosity_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_questions_listening_text"
+                 }
+             ]
+}

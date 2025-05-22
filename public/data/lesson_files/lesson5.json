@@ -1,0 +1,44 @@
+﻿{
+    "id":  "family-members-basic",
+    "difficulty":  "ui_difficulty_easy",
+    "themeKey":  "lesson_theme_family",
+    "titleKey":  "lesson_title_family_basic",
+    "shortDescriptionKey":  "lesson_shortdesc_family_basic",
+    "explanationKey":  "lesson_expl_family_basic",
+    "coverImage":  "/images/lessons/family_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "de moeder",
+                           "definitionKey":  "lesson_vocab_mother_def"
+                       },
+                       {
+                           "dutch":  "de vader",
+                           "definitionKey":  "lesson_vocab_father_def"
+                       },
+                       {
+                           "dutch":  "de broer",
+                           "definitionKey":  "lesson_vocab_brother_def"
+                       },
+                       {
+                           "dutch":  "de zus",
+                           "definitionKey":  "lesson_vocab_sister_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Dit is mijn moeder en dat is mijn broer.",
+                                 "englishHint":  "This is my mother and that is my brother."
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_family_importance_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_family_birthdays_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_family_gezellig_text"
+                 }
+             ]
+}

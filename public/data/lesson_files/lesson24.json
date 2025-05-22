@@ -1,0 +1,40 @@
+﻿{
+    "id":  "giving-receiving-feedback",
+    "difficulty":  "ui_difficulty_hard",
+    "themeKey":  "lesson_theme_communication_skills",
+    "titleKey":  "lesson_title_giving_feedback",
+    "shortDescriptionKey":  "lesson_shortdesc_giving_feedback",
+    "explanationKey":  "lesson_expl_giving_feedback",
+    "coverImage":  "/images/lessons/feedback_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "constructieve feedback",
+                           "definitionKey":  "lesson_vocab_constructive_feedback_def"
+                       },
+                       {
+                           "dutch":  "Ik waardeer je input.",
+                           "definitionKey":  "lesson_vocab_appreciate_input_def"
+                       },
+                       {
+                           "dutch":  "Een punt van verbetering...",
+                           "definitionKey":  "lesson_vocab_point_improvement_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Bedankt voor je presentatie. Een tip: misschien iets langzamer praten.",
+                                 "englishHint":  "Thanks for your presentation. A tip: perhaps speak a bit slower."
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_feedback_sandwich_method_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_feedback_specific_behavior_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_feedback_workplace_culture_text"
+                 }
+             ]
+}

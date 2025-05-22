@@ -1,0 +1,44 @@
+﻿{
+    "id":  "asking-for-directions",
+    "difficulty":  "ui_difficulty_medium",
+    "themeKey":  "lesson_theme_travel",
+    "titleKey":  "lesson_title_directions",
+    "shortDescriptionKey":  "lesson_shortdesc_directions",
+    "explanationKey":  "lesson_expl_directions",
+    "coverImage":  "/images/lessons/directions_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "linksaf",
+                           "definitionKey":  "lesson_vocab_turnleft_def"
+                       },
+                       {
+                           "dutch":  "rechtsaf",
+                           "definitionKey":  "lesson_vocab_turnright_def"
+                       },
+                       {
+                           "dutch":  "rechtdoor",
+                           "definitionKey":  "lesson_vocab_straighton_def"
+                       },
+                       {
+                           "dutch":  "het kruispunt",
+                           "definitionKey":  "lesson_vocab_crossroads_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Ga bij het kruispunt linksaf.",
+                                 "englishHint":  "Turn left at the crossroads."
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_directions_landmarks_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_directions_cycle_paths_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_directions_asking_locals_text"
+                 }
+             ]
+}

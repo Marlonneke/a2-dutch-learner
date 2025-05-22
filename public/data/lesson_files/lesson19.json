@@ -1,0 +1,40 @@
+﻿{
+    "id":  "public-announcements",
+    "difficulty":  "ui_difficulty_medium",
+    "themeKey":  "lesson_theme_travel_information",
+    "titleKey":  "lesson_title_public_announcements",
+    "shortDescriptionKey":  "lesson_shortdesc_public_announcements",
+    "explanationKey":  "lesson_expl_public_announcements",
+    "coverImage":  "/images/lessons/announcements_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "Let op!",
+                           "definitionKey":  "lesson_vocab_attention_def"
+                       },
+                       {
+                           "dutch":  "Geachte reizigers",
+                           "definitionKey":  "lesson_vocab_dear_travelers_def"
+                       },
+                       {
+                           "dutch":  "Spoorwijziging",
+                           "definitionKey":  "lesson_vocab_platform_change_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Let op, spoorwijziging voor de intercity naar Maastricht.",
+                                 "englishHint":  "Attention, platform change for the intercity to Maastricht."
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_announcements_listen_carefully_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_announcements_info_boards_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_announcements_ask_staff_text"
+                 }
+             ]
+}

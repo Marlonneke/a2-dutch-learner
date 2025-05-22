@@ -1,0 +1,40 @@
+﻿{
+    "id":  "city-day-out-planning",
+    "difficulty":  "ui_difficulty_medium",
+    "themeKey":  "lesson_theme_leisure_planning",
+    "titleKey":  "lesson_title_city_day_out",
+    "shortDescriptionKey":  "lesson_shortdesc_city_day_out",
+    "explanationKey":  "lesson_expl_city_day_out",
+    "coverImage":  "/images/lessons/city_trip_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "Zullen we...?",
+                           "definitionKey":  "lesson_vocab_shallwe_def"
+                       },
+                       {
+                           "dutch":  "Heb je zin om...?",
+                           "definitionKey":  "lesson_vocab_doyoufeellike_def"
+                       },
+                       {
+                           "dutch":  "een museum bezoeken",
+                           "definitionKey":  "lesson_vocab_visitmuseum_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Zullen we zaterdag naar Amsterdam gaan om te winkelen?",
+                                 "englishHint":  "Shall we go to Amsterdam on Saturday for shopping?"
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_citytrip_museumkaart_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_citytrip_publictransport_walking_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_citytrip_spontaneity_planning_text"
+                 }
+             ]
+}

@@ -1,0 +1,48 @@
+﻿{
+    "id":  "telling-time-official-informal",
+    "difficulty":  "ui_difficulty_medium",
+    "themeKey":  "lesson_theme_time_date",
+    "titleKey":  "lesson_title_telling_time",
+    "shortDescriptionKey":  "lesson_shortdesc_telling_time",
+    "explanationKey":  "lesson_expl_telling_time",
+    "coverImage":  "/images/lessons/time_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "Hoe laat is het?",
+                           "definitionKey":  "lesson_vocab_whattimeisit_def"
+                       },
+                       {
+                           "dutch":  "Het is ... uur.",
+                           "definitionKey":  "lesson_vocab_itis_oclock_def"
+                       },
+                       {
+                           "dutch":  "kwart voor",
+                           "definitionKey":  "lesson_vocab_quarterto_def"
+                       },
+                       {
+                           "dutch":  "kwart over",
+                           "definitionKey":  "lesson_vocab_quarterpast_def"
+                       },
+                       {
+                           "dutch":  "half",
+                           "definitionKey":  "lesson_vocab_half_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Het is half drie.",
+                                 "englishHint":  "It is half past two (2:30)."
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_time_24hour_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_time_punctuality_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_time_appointments_text"
+                 }
+             ]
+}

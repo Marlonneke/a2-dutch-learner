@@ -1,0 +1,48 @@
+﻿{
+    "id":  "shopping-clothes",
+    "difficulty":  "ui_difficulty_medium",
+    "themeKey":  "lesson_theme_shopping",
+    "titleKey":  "lesson_title_shopping_clothes",
+    "shortDescriptionKey":  "lesson_shortdesc_shopping_clothes",
+    "explanationKey":  "lesson_expl_shopping_clothes",
+    "coverImage":  "/images/lessons/clothes_shopping_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "de broek",
+                           "definitionKey":  "lesson_vocab_trousers_def"
+                       },
+                       {
+                           "dutch":  "het hemd / de blouse",
+                           "definitionKey":  "lesson_vocab_shirt_blouse_def"
+                       },
+                       {
+                           "dutch":  "de jurk",
+                           "definitionKey":  "lesson_vocab_dress_def"
+                       },
+                       {
+                           "dutch":  "passen",
+                           "definitionKey":  "lesson_vocab_tryon_def"
+                       },
+                       {
+                           "dutch":  "de maat",
+                           "definitionKey":  "lesson_vocab_size_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Ik zoek een blauwe broek in maat 38.",
+                                 "englishHint":  "I\u0027m looking for blue trousers in size 38."
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_shopping_sales_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_shopping_fittingrooms_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_shopping_vat_text"
+                 }
+             ]
+}

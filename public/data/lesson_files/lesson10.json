@@ -1,0 +1,40 @@
+﻿{
+    "id":  "to-be-zijn",
+    "difficulty":  "ui_difficulty_easy",
+    "themeKey":  "lesson_theme_verbs",
+    "titleKey":  "lesson_title_verb_zijn",
+    "shortDescriptionKey":  "lesson_shortdesc_verb_zijn",
+    "explanationKey":  "lesson_expl_verb_zijn",
+    "coverImage":  "/images/lessons/be_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "ik ben",
+                           "definitionKey":  "lesson_vocab_iam_def"
+                       },
+                       {
+                           "dutch":  "jij bent",
+                           "definitionKey":  "lesson_vocab_youare_def"
+                       },
+                       {
+                           "dutch":  "hij/zij/het is",
+                           "definitionKey":  "lesson_vocab_heis_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Ik ben moe.",
+                                 "englishHint":  "I am tired."
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_zijn_identity_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_zijn_auxiliary_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_zijn_location_text"
+                 }
+             ]
+}

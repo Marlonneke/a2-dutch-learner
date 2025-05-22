@@ -1,0 +1,40 @@
+﻿{
+    "id":  "ordering-in-restaurant",
+    "difficulty":  "ui_difficulty_medium",
+    "themeKey":  "lesson_theme_food",
+    "titleKey":  "lesson_title_ordering_restaurant",
+    "shortDescriptionKey":  "lesson_shortdesc_ordering_restaurant",
+    "explanationKey":  "lesson_expl_ordering_restaurant",
+    "coverImage":  "/images/lessons/restaurant_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "de menukaart",
+                           "definitionKey":  "lesson_vocab_menu_def"
+                       },
+                       {
+                           "dutch":  "Ik wil graag bestellen.",
+                           "definitionKey":  "lesson_vocab_iwanttoorder_def"
+                       },
+                       {
+                           "dutch":  "de rekening",
+                           "definitionKey":  "lesson_vocab_bill_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Ober, mogen wij de menukaart alstublieft?",
+                                 "englishHint":  "Waiter, may we have the menu please?"
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_restaurant_service_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_restaurant_tipping_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_restaurant_reservation_text"
+                 }
+             ]
+}

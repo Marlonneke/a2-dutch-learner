@@ -1,0 +1,40 @@
+﻿{
+    "id":  "renting-apartment",
+    "difficulty":  "ui_difficulty_hard",
+    "themeKey":  "lesson_theme_housing",
+    "titleKey":  "lesson_title_renting_apartment",
+    "shortDescriptionKey":  "lesson_shortdesc_renting_apartment",
+    "explanationKey":  "lesson_expl_renting_apartment",
+    "coverImage":  "/images/lessons/apartment_rent_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "de huur",
+                           "definitionKey":  "lesson_vocab_rent_price_def"
+                       },
+                       {
+                           "dutch":  "het contract",
+                           "definitionKey":  "lesson_vocab_contract_def"
+                       },
+                       {
+                           "dutch":  "de borg",
+                           "definitionKey":  "lesson_vocab_deposit_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Hoeveel bedraagt de maandelijkse huur?",
+                                 "englishHint":  "How much is the monthly rent?"
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_renting_market_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_renting_contract_read_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_renting_huurcommissie_text"
+                 }
+             ]
+}

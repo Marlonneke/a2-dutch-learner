@@ -1,0 +1,40 @@
+﻿{
+    "id":  "health-issues-doctor-visit",
+    "difficulty":  "ui_difficulty_hard",
+    "themeKey":  "lesson_theme_health",
+    "titleKey":  "lesson_title_health_doctor",
+    "shortDescriptionKey":  "lesson_shortdesc_health_doctor",
+    "explanationKey":  "lesson_expl_health_doctor",
+    "coverImage":  "/images/lessons/doctor_visit_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "Ik voel me niet lekker.",
+                           "definitionKey":  "lesson_vocab_notfeelingwell_def"
+                       },
+                       {
+                           "dutch":  "Ik heb hoofdpijn.",
+                           "definitionKey":  "lesson_vocab_ihaveheadache_single_def"
+                       },
+                       {
+                           "dutch":  "de koorts",
+                           "definitionKey":  "lesson_vocab_fever_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Ik heb al drie dagen koorts.",
+                                 "englishHint":  "I have had a fever for three days."
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_health_huisarts_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_health_insurance_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_health_selfcare_paracetamol_text"
+                 }
+             ]
+}

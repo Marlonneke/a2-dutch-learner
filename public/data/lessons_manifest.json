@@ -1,0 +1,272 @@
+[
+    {
+        "id":  "greetings-introductions",
+        "fileId":  "lesson1",
+        "titleKey":  "lesson_title_greetings_full",
+        "shortDescriptionKey":  "lesson_shortdesc_greetings",
+        "difficulty":  "ui_difficulty_easy",
+        "themeKey":  "lesson_theme_greetings",
+        "coverImage":  "/images/lessons/greetings_lesson.jpg"
+    },
+    {
+        "id":  "numbers-0-20",
+        "fileId":  "lesson2",
+        "titleKey":  "lesson_title_numbers_0_20",
+        "shortDescriptionKey":  "lesson_shortdesc_numbers_0_20",
+        "difficulty":  "ui_difficulty_easy",
+        "themeKey":  "lesson_theme_numbers",
+        "coverImage":  "/images/lessons/numbers_lesson.jpg"
+    },
+    {
+        "id":  "colors-basic",
+        "fileId":  "lesson3",
+        "titleKey":  "lesson_title_colors_basic",
+        "shortDescriptionKey":  "lesson_shortdesc_colors_basic",
+        "difficulty":  "ui_difficulty_easy",
+        "themeKey":  "lesson_theme_colors",
+        "coverImage":  "/images/lessons/colors_lesson.jpg"
+    },
+    {
+        "id":  "days-of-week",
+        "fileId":  "lesson4",
+        "titleKey":  "lesson_title_days_week",
+        "shortDescriptionKey":  "lesson_shortdesc_days_week",
+        "difficulty":  "ui_difficulty_easy",
+        "themeKey":  "lesson_theme_time_date",
+        "coverImage":  "/images/lessons/days_week_lesson.jpg"
+    },
+    {
+        "id":  "family-members-basic",
+        "fileId":  "lesson5",
+        "titleKey":  "lesson_title_family_basic",
+        "shortDescriptionKey":  "lesson_shortdesc_family_basic",
+        "difficulty":  "ui_difficulty_easy",
+        "themeKey":  "lesson_theme_family",
+        "coverImage":  "/images/lessons/family_lesson.jpg"
+    },
+    {
+        "id":  "food-drinks-common",
+        "fileId":  "lesson6",
+        "titleKey":  "lesson_title_food_drinks_common",
+        "shortDescriptionKey":  "lesson_shortdesc_food_drinks_common",
+        "difficulty":  "ui_difficulty_easy",
+        "themeKey":  "lesson_theme_food",
+        "coverImage":  "/images/lessons/food_drinks_lesson.jpg"
+    },
+    {
+        "id":  "simple-questions-who-what-where",
+        "fileId":  "lesson7",
+        "titleKey":  "lesson_title_simple_questions_www",
+        "shortDescriptionKey":  "lesson_shortdesc_simple_questions_www",
+        "difficulty":  "ui_difficulty_easy",
+        "themeKey":  "lesson_theme_questions",
+        "coverImage":  "/images/lessons/questions_lesson.jpg"
+    },
+    {
+        "id":  "my-room-description",
+        "fileId":  "lesson8",
+        "titleKey":  "lesson_title_my_room",
+        "shortDescriptionKey":  "lesson_shortdesc_my_room",
+        "difficulty":  "ui_difficulty_easy",
+        "themeKey":  "lesson_theme_home_living",
+        "coverImage":  "/images/lessons/my_room_lesson.jpg"
+    },
+    {
+        "id":  "to-have-hebben",
+        "fileId":  "lesson9",
+        "titleKey":  "lesson_title_verb_hebben",
+        "shortDescriptionKey":  "lesson_shortdesc_verb_hebben",
+        "difficulty":  "ui_difficulty_easy",
+        "themeKey":  "lesson_theme_verbs",
+        "coverImage":  "/images/lessons/have_lesson.jpg"
+    },
+    {
+        "id":  "to-be-zijn",
+        "fileId":  "lesson10",
+        "titleKey":  "lesson_title_verb_zijn",
+        "shortDescriptionKey":  "lesson_shortdesc_verb_zijn",
+        "difficulty":  "ui_difficulty_easy",
+        "themeKey":  "lesson_theme_verbs",
+        "coverImage":  "/images/lessons/be_lesson.jpg"
+    },
+    {
+        "id":  "asking-for-directions",
+        "fileId":  "lesson11",
+        "titleKey":  "lesson_title_directions",
+        "shortDescriptionKey":  "lesson_shortdesc_directions",
+        "difficulty":  "ui_difficulty_medium",
+        "themeKey":  "lesson_theme_travel",
+        "coverImage":  "/images/lessons/directions_lesson.jpg"
+    },
+    {
+        "id":  "ordering-in-restaurant",
+        "fileId":  "lesson12",
+        "titleKey":  "lesson_title_ordering_restaurant",
+        "shortDescriptionKey":  "lesson_shortdesc_ordering_restaurant",
+        "difficulty":  "ui_difficulty_medium",
+        "themeKey":  "lesson_theme_food",
+        "coverImage":  "/images/lessons/restaurant_lesson.jpg"
+    },
+    {
+        "id":  "numbers-100-1000",
+        "fileId":  "lesson13",
+        "titleKey":  "lesson_title_numbers_100_1000",
+        "shortDescriptionKey":  "lesson_shortdesc_numbers_100_1000",
+        "difficulty":  "ui_difficulty_medium",
+        "themeKey":  "lesson_theme_numbers",
+        "coverImage":  "/images/lessons/numbers_large_lesson.jpg"
+    },
+    {
+        "id":  "telling-time-official-informal",
+        "fileId":  "lesson14",
+        "titleKey":  "lesson_title_telling_time",
+        "shortDescriptionKey":  "lesson_shortdesc_telling_time",
+        "difficulty":  "ui_difficulty_medium",
+        "themeKey":  "lesson_theme_time_date",
+        "coverImage":  "/images/lessons/time_lesson.jpg"
+    },
+    {
+        "id":  "shopping-clothes",
+        "fileId":  "lesson15",
+        "titleKey":  "lesson_title_shopping_clothes",
+        "shortDescriptionKey":  "lesson_shortdesc_shopping_clothes",
+        "difficulty":  "ui_difficulty_medium",
+        "themeKey":  "lesson_theme_shopping",
+        "coverImage":  "/images/lessons/clothes_shopping_lesson.jpg"
+    },
+    {
+        "id":  "making-appointments",
+        "fileId":  "lesson16",
+        "titleKey":  "lesson_title_making_appointments",
+        "shortDescriptionKey":  "lesson_shortdesc_making_appointments",
+        "difficulty":  "ui_difficulty_medium",
+        "themeKey":  "lesson_theme_daily_life",
+        "coverImage":  "/images/lessons/appointments_lesson.jpg"
+    },
+    {
+        "id":  "daily-routine",
+        "fileId":  "lesson17",
+        "titleKey":  "lesson_title_daily_routine",
+        "shortDescriptionKey":  "lesson_shortdesc_daily_routine",
+        "difficulty":  "ui_difficulty_medium",
+        "themeKey":  "lesson_theme_daily_life",
+        "coverImage":  "/images/lessons/daily_routine_lesson.jpg"
+    },
+    {
+        "id":  "city-day-out-planning",
+        "fileId":  "lesson18",
+        "titleKey":  "lesson_title_city_day_out",
+        "shortDescriptionKey":  "lesson_shortdesc_city_day_out",
+        "difficulty":  "ui_difficulty_medium",
+        "themeKey":  "lesson_theme_leisure_planning",
+        "coverImage":  "/images/lessons/city_trip_lesson.jpg"
+    },
+    {
+        "id":  "public-announcements",
+        "fileId":  "lesson19",
+        "titleKey":  "lesson_title_public_announcements",
+        "shortDescriptionKey":  "lesson_shortdesc_public_announcements",
+        "difficulty":  "ui_difficulty_medium",
+        "themeKey":  "lesson_theme_travel_information",
+        "coverImage":  "/images/lessons/announcements_lesson.jpg"
+    },
+    {
+        "id":  "hobbies-free-time",
+        "fileId":  "lesson20",
+        "titleKey":  "lesson_title_hobbies",
+        "shortDescriptionKey":  "lesson_shortdesc_hobbies",
+        "difficulty":  "ui_difficulty_medium",
+        "themeKey":  "lesson_theme_leisure",
+        "coverImage":  "/images/lessons/hobbies_lesson.jpg"
+    },
+    {
+        "id":  "months-seasons",
+        "fileId":  "lesson21",
+        "titleKey":  "lesson_title_months_seasons",
+        "shortDescriptionKey":  "lesson_shortdesc_months_seasons",
+        "difficulty":  "ui_difficulty_medium",
+        "themeKey":  "lesson_theme_time_date",
+        "coverImage":  "/images/lessons/seasons_lesson.jpg"
+    },
+    {
+        "id":  "expressing-opinions-basic",
+        "fileId":  "lesson22",
+        "titleKey":  "lesson_title_opinions_basic",
+        "shortDescriptionKey":  "lesson_shortdesc_opinions_basic",
+        "difficulty":  "ui_difficulty_hard",
+        "themeKey":  "lesson_theme_opinions",
+        "coverImage":  "/images/lessons/opinions_lesson.jpg"
+    },
+    {
+        "id":  "renting-apartment",
+        "fileId":  "lesson23",
+        "titleKey":  "lesson_title_renting_apartment",
+        "shortDescriptionKey":  "lesson_shortdesc_renting_apartment",
+        "difficulty":  "ui_difficulty_hard",
+        "themeKey":  "lesson_theme_housing",
+        "coverImage":  "/images/lessons/apartment_rent_lesson.jpg"
+    },
+    {
+        "id":  "giving-receiving-feedback",
+        "fileId":  "lesson24",
+        "titleKey":  "lesson_title_giving_feedback",
+        "shortDescriptionKey":  "lesson_shortdesc_giving_feedback",
+        "difficulty":  "ui_difficulty_hard",
+        "themeKey":  "lesson_theme_communication_skills",
+        "coverImage":  "/images/lessons/feedback_lesson.jpg"
+    },
+    {
+        "id":  "dutch-traditions-holidays",
+        "fileId":  "lesson25",
+        "titleKey":  "lesson_title_dutch_traditions",
+        "shortDescriptionKey":  "lesson_shortdesc_dutch_traditions",
+        "difficulty":  "ui_difficulty_hard",
+        "themeKey":  "lesson_theme_culture_society",
+        "coverImage":  "/images/lessons/dutch_traditions_lesson.jpg"
+    },
+    {
+        "id":  "memorable-holiday",
+        "fileId":  "lesson26",
+        "titleKey":  "lesson_title_memorable_holiday",
+        "shortDescriptionKey":  "lesson_shortdesc_memorable_holiday",
+        "difficulty":  "ui_difficulty_hard",
+        "themeKey":  "lesson_theme_travel",
+        "coverImage":  "/images/lessons/holiday_memory_lesson.jpg"
+    },
+    {
+        "id":  "future-aspirations",
+        "fileId":  "lesson27",
+        "titleKey":  "lesson_title_future_aspirations",
+        "shortDescriptionKey":  "lesson_shortdesc_future_aspirations",
+        "difficulty":  "ui_difficulty_hard",
+        "themeKey":  "lesson_theme_future_goals",
+        "coverImage":  "/images/lessons/aspirations_lesson.jpg"
+    },
+    {
+        "id":  "city-vs-country",
+        "fileId":  "lesson28",
+        "titleKey":  "lesson_title_city_vs_country",
+        "shortDescriptionKey":  "lesson_shortdesc_city_vs_country",
+        "difficulty":  "ui_difficulty_hard",
+        "themeKey":  "lesson_theme_society_living",
+        "coverImage":  "/images/lessons/city_country_lesson.jpg"
+    },
+    {
+        "id":  "job-interview-basics",
+        "fileId":  "lesson29",
+        "titleKey":  "lesson_title_job_interview_basics",
+        "shortDescriptionKey":  "lesson_shortdesc_job_interview_basics",
+        "difficulty":  "ui_difficulty_hard",
+        "themeKey":  "lesson_theme_work",
+        "coverImage":  "/images/lessons/job_interview_lesson.jpg"
+    },
+    {
+        "id":  "health-issues-doctor-visit",
+        "fileId":  "lesson30",
+        "titleKey":  "lesson_title_health_doctor",
+        "shortDescriptionKey":  "lesson_shortdesc_health_doctor",
+        "difficulty":  "ui_difficulty_hard",
+        "themeKey":  "lesson_theme_health",
+        "coverImage":  "/images/lessons/doctor_visit_lesson.jpg"
+    }
+]

@@ -1,0 +1,44 @@
+﻿{
+    "id":  "daily-routine",
+    "difficulty":  "ui_difficulty_medium",
+    "themeKey":  "lesson_theme_daily_life",
+    "titleKey":  "lesson_title_daily_routine",
+    "shortDescriptionKey":  "lesson_shortdesc_daily_routine",
+    "explanationKey":  "lesson_expl_daily_routine",
+    "coverImage":  "/images/lessons/daily_routine_lesson.jpg",
+    "vocabulary":  [
+                       {
+                           "dutch":  "opstaan",
+                           "definitionKey":  "lesson_vocab_getup_def"
+                       },
+                       {
+                           "dutch":  "ontbijten",
+                           "definitionKey":  "lesson_vocab_havebreakfast_def"
+                       },
+                       {
+                           "dutch":  "naar het werk/school gaan",
+                           "definitionKey":  "lesson_vocab_gotoworkschool_def"
+                       },
+                       {
+                           "dutch":  "lunchen",
+                           "definitionKey":  "lesson_vocab_havelunch_def"
+                       }
+                   ],
+    "exampleSentences":  [
+                             {
+                                 "dutch":  "Ik sta elke dag om zeven uur op.",
+                                 "englishHint":  "I get up at seven o\u0027clock every day."
+                             }
+                         ],
+    "tips":  [
+                 {
+                     "tipKey":  "lesson_tip_routine_worklife_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_routine_eatingtimes_text"
+                 },
+                 {
+                     "tipKey":  "lesson_tip_routine_leisure_text"
+                 }
+             ]
+}
